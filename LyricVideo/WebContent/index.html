@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Test</title>
+
+
+<script src="./js/animation.js"></script>
+<script src="./js/whammy.js"></script>
+<script src="./js/whammyControls.js"></script>
+<script src="./js/jquery-3.1.0.min.js"
+	type="text/javascript"></script>
+</head>
+
+<style>
+#canvas
+{
+	border:1px solid blue;
+}
+#awesome
+{
+border:1px solid red;
+}
+
+</style>
+
+<body>
+
+
+<div id="whammyStuff">
+<canvas id="canvas" width="800" height="600"></canvas>
+<video id="awesome" width="800" height="600" controls autoplay loop></video>
+Status: <span id="status">Idle</span>
+<a style="display:none" id="download" download="clock.webm">Download WebM</a>
+</div>
+
+
+<script>
+startAnimation();
+</script>
+</body>
+</html>
