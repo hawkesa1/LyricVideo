@@ -490,7 +490,7 @@ window.Whammy = (function(){
 	function WhammyVideo(speed, quality){ // a more abstract-ish API
 		this.frames = [];
 		this.duration = 1000 / speed;
-		this.quality = quality || 0.99;
+		this.quality = quality || 0.5;
 	}
 
 	WhammyVideo.prototype.add = function(frame, duration){
@@ -502,6 +502,7 @@ window.Whammy = (function(){
 		if(frame.toDataURL){
 			// frame = frame.toDataURL('image/webp', this.quality);
 			// quickly store image data so we don't block cpu. encode in compile method.
+			//frame = frame.getContext('2d').getImageData(0, 0, frame.width, frame.height);
 			frame = frame.getContext('2d').getImageData(0, 0, frame.width, frame.height);
 		}else if(typeof frame != "string"){
 			throw "frame must be a a HTMLCanvasElement, a CanvasRenderingContext2D or a DataURI formatted string"

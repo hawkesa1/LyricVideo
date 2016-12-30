@@ -1,8 +1,7 @@
-var maxTimes = 100;
+var maxTimes = 1000;
 var numberTimes = 0;
 
-var last_time = +new Date;
-var video = new Whammy.Video(60);
+var video = new Whammy.Video(30, 0.2);
 var progress = document.getElementById('progress');
 
 function startAnimation() {
@@ -17,12 +16,22 @@ function startAnimation() {
 	nextFrame();
 }
 
+var vidTime=0;
+
 function nextFrame() {
-	var context = clock(last_time += 1000);
+	
+	var audio = document.getElementById('audio');
+	var currentAudioTime = audio.currentTime * 1000;
+	
+	vidTime+=(1000/30);
+	
+	var context = clock(vidTime);
+	
 	console.log("Add Context");
 	video.add(context);
 	if (numberTimes++ < maxTimes) {
-		requestAnimationFrame(nextFrame);
+		//requestAnimationFrame(nextFrame);
+		nextFrame();
 		document.getElementById('status').innerHTML = "Drawing Frames";
 	} else {
 		document.getElementById('status').innerHTML = "Compiling Video";
