@@ -1,17 +1,86 @@
-function animation1(ctx, i, lineText) {
+function clock(ctx, currentAudioTime, lines) {
+
+	var lineResults = determineCurrentLineAndNextLine(currentAudioTime, lines)
+	var nextLine = lineResults[0];
+	var playingLine = lineResults[1];
+
+	
+	var lineDisplay = $('#lyrics');
+	lineDisplay.html("");
+	var lineDisplayText = "";
+
+	if (playingLine > -1) {
+
+		var playingWordIndex = determineCurrentWord(currentAudioTime,
+				lines[playingLine]);
+		console.log(playingWordIndex);
+
+		var words = lines[playingLine].words;
+		lineDisplayText += "<div id='line_" + playingLine + "' class='line'>";
+
+		for (var i = 0; i < words.length; i++) {
+			if (i == playingWordIndex) {
+				lineDisplayText += "<div id='line_" + playingLine + "_word_"
+						+ i + "' class='word playing'>" + words[i].word + "</div>";
+			}
+			else
+			{
+				lineDisplayText += "<div id='line_" + playingLine + "_word_"
+				+ i + "' class='word'>" + words[i].word + "</div>";
+			}	
+		}
+		lineDisplay.html(lineDisplayText);
+	}
+
 	ctx.save();
-	ctx.fillStyle = 'black'
+	ctx.fillStyle = 'white'
 	ctx.fillRect(0, 0, ctx.canvas.width, ctx.canvas.height);
-	ctx.font = "40px Georgia";
+	ctx.font = "20px Arial";
 	ctx.fillStyle = "red";
-	ctx.fillText(lineText, i, 90);
-	ctx.fillText('Alex', 10, 190);
+	ctx.fillText((currentAudioTime / 1000).toFixed(2), 10, 550);
 	ctx.restore();
 	return ctx;
 }
 
+function determineCurrentWord(currentAudioTime, line) {
+	var playingWord;
+	var words = line.words;
 
-function clock(ctx, currentAudioTime, lines) {
+	if (currentAudioTime < words[0].startTime)// before first word
+	{
+
+		playingWord = -1;
+	} else if (currentAudioTime > words[words.length - 1].endTime) // after
+	// last word
+	{
+
+		playingWord = -1;
+	} else {
+		for (var i = 0; i < words.length; i++) {
+			word = words[i];
+			if (currentAudioTime > word.endTime) // if currentTime is greater
+			// than this words's endTime
+			{
+				// keep going
+			} else {
+				if (currentAudioTime >= word.startTime) // word is playing
+				{
+					playingWord = i;
+
+				} else // line is next to play
+				{
+					playingWord = -1;
+
+				}
+				break;
+			}
+		}
+	}
+	return playingWord;
+
+}
+
+function determineCurrentLineAndNextLine(currentAudioTime, lines) {
 	var nextLine = -1;
 	var playingLine = -1;
 	var line;
@@ -47,32 +116,5 @@ function clock(ctx, currentAudioTime, lines) {
 		}
 
 	}
-
-	var lineInfo = '';
-	lineInfo = 'Playing Line: ' + playingLine + " Next Line: " + nextLine;
-
-	var lineText = ''
-
-	// console.log(lines);
-	// console.log(audio.currentTime);
-	// var lineText = '';
-	if (playingLine > -1) {
-		var words = lines[playingLine].words;
-		for (var i = 0; i < words.length; i++) {
-			lineText += words[i].word + ' ';
-		}
-	}
-
-	
-	ctx.save();
-	ctx.fillStyle = 'black'
-	ctx.fillRect(0, 0, ctx.canvas.width, ctx.canvas.height);
-	ctx.font = "bold 40px Arial";
-	ctx.fillStyle = "red";
-	ctx.fillText(lineInfo, 10, 90);
-	ctx.fillText(lineText, 10, 190);
-	ctx.fillText((currentAudioTime/1000).toFixed (2), 10, 290);
-	ctx.restore();
-
-	return ctx;
+	return [ nextLine, playingLine ];
 }

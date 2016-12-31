@@ -22,7 +22,7 @@ function helloAlex(frameNumber) {
 
 	});
 	page.onLoadFinished = function(status) {
-		page.render(frameLocation + frameNumber + '.png', {
+		page.render(frameLocation + pad(frameNumber,5) + '.png', {
 			format : 'png',
 			quality : '100'
 		});
@@ -33,4 +33,10 @@ function helloAlex(frameNumber) {
 			phantom.exit();
 		}
 	};
+}
+
+function pad(num, size) {
+    var s = num+"";
+    while (s.length < size) s = "0" + s;
+    return s;
 }
