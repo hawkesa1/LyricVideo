@@ -67,10 +67,11 @@ function clock(ctx, currentAudioTime, lines) {
 	ctx.save();
 	ctx.fillStyle = 'black'
 	ctx.fillRect(0, 0, ctx.canvas.width, ctx.canvas.height);
-	ctx.font = "40px Georgia";
+	ctx.font = "bold 40px Arial";
 	ctx.fillStyle = "red";
 	ctx.fillText(lineInfo, 10, 90);
 	ctx.fillText(lineText, 10, 190);
+	ctx.fillText((currentAudioTime/1000).toFixed (2), 10, 290);
 	ctx.restore();
 
 	return ctx;

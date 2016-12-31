@@ -68,5 +68,28 @@
 		
 		clock(ctx, (frameNumber/fps)*1000, lyricsObject);
 	</script>
+	
+	
+	
+	
+	
+	<script>
+	var  tempFrame=1;
+	var start = null;
+	
+	function step(timestamp) {
+		  if (!start) start = timestamp;
+		  var progress = timestamp - start;
+		 
+		  if (progress < 10000) {
+		    window.requestAnimationFrame(step);
+		    clock(ctx, (tempFrame++/60)*1000, lyricsObject);
+		  }
+		}
+
+		window.requestAnimationFrame(step);
+	</script>
+	
+	
 </body>
 </html>
