@@ -1,0 +1,17 @@
+@echo off
+
+SET ROOT_LOCATION=C:\Users\Hawkes\GitRepoLyricVideo\LyricVideo
+SET PHANTOM_BINARY=%ROOT_LOCATION%\phantomJS\phantomjs-2.1.1-windows\bin\phantomjs
+SET PHANTOM_SCRIPTS=%ROOT_LOCATION%\phantomJS\phantomScripts
+SET GENERATED_FRAMES=%ROOT_LOCATION%\videoGenerator\frames\render1\
+SET FFMPEG_BINARY=%ROOT_LOCATION%\ffmpeg\ffmpeg\bin\ffmpeg
+SET VIDEO_SILENT=%ROOT_LOCATION%\videoGenerator\videoSilent
+SET MP3=%ROOT_LOCATION%\videoGenerator\mp3
+SET VIDEO=%ROOT_LOCATION%\videoGenerator\video
+
+MKDIR %GENERATED_FRAMES%
+%PHANTOM_BINARY% %PHANTOM_SCRIPTS%\takeLoadsOfScreenshots.js 1 600 %GENERATED_FRAMES%
+%FFMPEG_BINARY% -i %GENERATED_FRAMES%image_%%05d.png -c:v libx264 -r 25 -preset slow -crf 1 -pix_fmt yuv420p -vf "scale=trunc(iw/2)*2:trunc(ih/2)*2" -y %VIDEO_SILENT%\out1.mp4
+%FFMPEG_BINARY% -i %VIDEO_SILENT%\out1.mp4   -i %MP3%\dynamite.mp3 -c:v copy -c:a copy -y %VIDEO%\output3.mp4
+
+RMDIR /S/Q %GENERATED_FRAMES%

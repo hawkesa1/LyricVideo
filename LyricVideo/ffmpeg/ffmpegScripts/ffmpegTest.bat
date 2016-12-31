@@ -1,1 +1,0 @@
-H:\Development\phantomTest\ffmpeg\bin\ffmpeg -start_number 10 -i C:\Users\Hawkes\GitRepoLyricVideo\LyricVideo\phantomJS\phantomScripts\frames\image_%%02d.png -c:v libx264 -r 25 -pix_fmt yuv420p -vf "scale=trunc(iw/2)*2:trunc(ih/2)*2" out1.mp4

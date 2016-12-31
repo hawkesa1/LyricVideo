@@ -1,1 +1,0 @@
-C:\Users\Alex\git\LyricVideo\LyricVideo\ffmpeg\ffmpeg\bin\ffmpeg -i out1.mp4 -i Tutorial.MP3 -c:v copy -c:a aac -strict experimental output2.mp4

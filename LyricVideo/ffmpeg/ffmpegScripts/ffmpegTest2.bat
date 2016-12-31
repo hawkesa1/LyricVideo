@@ -1,1 +1,0 @@
-C:\Users\Alex\git\LyricVideo\LyricVideo\ffmpeg\ffmpeg\bin\ffmpeg -start_number 1 -i C:\Users\Alex\git\LyricVideo\LyricVideo\phantomJS\phantomScripts\frames\image_%%05d.png -c:v libx264 -r 25 -pix_fmt yuv420p -vf "scale=trunc(iw/2)*2:trunc(ih/2)*2" -framerate 30 out1.mp4
