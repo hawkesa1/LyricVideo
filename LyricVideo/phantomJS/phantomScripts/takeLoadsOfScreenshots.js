@@ -1,4 +1,3 @@
-
 var fs = require('fs');
 var system = require('system');
 var args = system.args;
@@ -8,11 +7,6 @@ var frameLocation = system.args[3];
 var fps = 25;
 var page = require('webpage').create();
 
-page.viewportSize = {
-	width : 800,
-	height : 600
-};
-
 helloAlex(frameNumber);
 
 function helloAlex(frameNumber) {
@@ -21,15 +15,23 @@ function helloAlex(frameNumber) {
 	page.open(theUrl, function() {
 
 	});
+
 	page.onLoadFinished = function(status) {
-		var location=frameLocation +"image_"+ pad(frameNumber, 5) + '.png';
+		var location = frameLocation + "image_" + pad(frameNumber, 5) + '.jpg';
+
 		
+		page.clipRect = {
+		    top:    0,
+		    left:   0,
+		    width:  800,
+		    height: 600
+		};
 		page.render(location, {
-			format : 'png',
+			format : 'jpg',
 			quality : '100'
 		});
 		if (frameNumber % 100 == 0) {
-			console.log("Rendered:" + frameNumber+ "/"+maxFrames);
+			console.log("Rendered:" + frameNumber + "/" + maxFrames);
 		}
 		if (frameNumber < maxFrames) {
 			helloAlex(++frameNumber);

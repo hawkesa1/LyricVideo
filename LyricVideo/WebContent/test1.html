@@ -9,18 +9,31 @@
 <script src="./js/main.js"></script>
 
 <style>
+@font-face {
+	font-family: RubikOne;
+	src: url(RubikOne-Regular.ttf);
+}
+
 .word {
 	font-size: 40px;
-	font-family: 'Arial';
+	font-family: 'RubikOne';
+	-webkit-text-fill-color: white;
+	/* Will override color (regardless of order) */
+	-webkit-text-stroke-width: 3px;
+	-webkit-text-stroke-color: #002966;
 	border: 0px solid black;
 	float: left;
 	padding-right: 10px;
 	font-variant: small-caps;
+	opacity: 1;
 }
 
 .playing {
-	color: red;
-	text-decoration: underline;
+	font-size: 40px;
+	-webkit-text-fill-color: #ffb3ff;
+	/* Will override color (regardless of order) */
+	-webkit-text-stroke-color: #ff00ff;
+	position:relative;
 }
 
 .line {
@@ -46,6 +59,10 @@
 	position: absolute;
 	top: 200px;
 }
+#lyrics1 {
+	position: absolute;
+	top: 400px;
+}
 
 body {
 	border: 0px;
@@ -59,6 +76,7 @@ body {
 	<canvas id="canvas" width="800" height="600"></canvas>
 	<div id="page">
 		<div id="lyrics"></div>
+		<div id="lyrics1"></div>
 	</div>
 
 

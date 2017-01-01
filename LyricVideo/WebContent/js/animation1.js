@@ -6,9 +6,13 @@ function clock(ctx, currentAudioTime, lines) {
 
 	
 	var lineDisplay = $('#lyrics');
+	var lineDisplay1 = $('#lyrics1');
+	
 	lineDisplay.html("");
+	lineDisplay1.html("");
 	var lineDisplayText = "";
 
+	
 	if (playingLine > -1) {
 
 		var playingWordIndex = determineCurrentWord(currentAudioTime,
@@ -18,6 +22,7 @@ function clock(ctx, currentAudioTime, lines) {
 		var words = lines[playingLine].words;
 		lineDisplayText += "<div id='line_" + playingLine + "' class='line'>";
 
+		
 		for (var i = 0; i < words.length; i++) {
 			if (i == playingWordIndex) {
 				lineDisplayText += "<div id='line_" + playingLine + "_word_"
@@ -30,10 +35,13 @@ function clock(ctx, currentAudioTime, lines) {
 			}	
 		}
 		lineDisplay.html(lineDisplayText);
+		
+		
+	
 	}
 
 	ctx.save();
-	ctx.fillStyle = 'white'
+	ctx.fillStyle = 'yellow'
 	ctx.fillRect(0, 0, ctx.canvas.width, ctx.canvas.height);
 	ctx.font = "20px Arial";
 	ctx.fillStyle = "red";
