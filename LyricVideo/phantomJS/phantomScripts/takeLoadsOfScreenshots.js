@@ -4,14 +4,18 @@ var args = system.args;
 var frameNumber = system.args[1];
 var maxFrames = system.args[2];
 var frameLocation = system.args[3];
-var fps = 25;
+var fps = system.args[4];
+var pageWidth=system.args[5];
+var pageHeight=system.args[6];
+
 var page = require('webpage').create();
+
 
 helloAlex(frameNumber);
 
 function helloAlex(frameNumber) {
 	var theUrl = 'http://localhost:8080/LyricVideo/test1.html?frameNumber='
-			+ frameNumber + '&fps=' + fps;
+			+ frameNumber + '&fps=' + fps +'&pageWidth='+pageWidth+'&pageHeight='+pageHeight;
 	page.open(theUrl, function() {
 
 	});
@@ -23,8 +27,8 @@ function helloAlex(frameNumber) {
 		page.clipRect = {
 		    top:    0,
 		    left:   0,
-		    width:  800,
-		    height: 600
+		    width:  pageWidth,
+		    height: pageHeight
 		};
 		page.render(location, {
 			format : 'jpg',

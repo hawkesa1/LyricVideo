@@ -1,28 +1,22 @@
 function clock(ctx, currentAudioTime, lines) {
-
 	var lineResults = determineCurrentLineAndNextLine(currentAudioTime, lines)
 	var nextLine = lineResults[0];
 	var playingLine = lineResults[1];
-
-	
 	var lineDisplay = $('#lyrics');
 	var lineDisplay1 = $('#lyrics1');
 	
 	lineDisplay.html("");
 	lineDisplay1.html("");
 	var lineDisplayText = "";
-
+var temp;
 	
 	if (playingLine > -1) {
-
 		var playingWordIndex = determineCurrentWord(currentAudioTime,
 				lines[playingLine]);
 		console.log(playingWordIndex);
-
 		var words = lines[playingLine].words;
-		lineDisplayText += "<div id='line_" + playingLine + "' class='line'>";
-
-		
+		var lineId='line_' + playingLine;
+		lineDisplayText += "<div id='" + lineId + "' class='line'>";
 		for (var i = 0; i < words.length; i++) {
 			if (i == playingWordIndex) {
 				lineDisplayText += "<div id='line_" + playingLine + "_word_"
@@ -35,9 +29,7 @@ function clock(ctx, currentAudioTime, lines) {
 			}	
 		}
 		lineDisplay.html(lineDisplayText);
-		
-		
-	
+		temp = centreLine(lineId, lines[playingLine], currentAudioTime);
 	}
 
 	ctx.save();
@@ -45,9 +37,25 @@ function clock(ctx, currentAudioTime, lines) {
 	ctx.fillRect(0, 0, ctx.canvas.width, ctx.canvas.height);
 	ctx.font = "20px Arial";
 	ctx.fillStyle = "red";
-	ctx.fillText((currentAudioTime / 1000).toFixed(2), 10, 550);
+	ctx.fillText(temp, 10, 550);
 	ctx.restore();
 	return ctx;
+}
+
+var lineStartHeight=0;
+
+function centreLine(lineId,line,currentAudioTime)
+{
+	var lineWidth=$('#'+lineId).width();
+	var leftPosition=(pageWidth-lineWidth)/2;
+	var topPosition=line.endTime-line.startTime
+	
+	lineStartHeight=pageHeight-((currentAudioTime/20000)*pageHeight);
+	
+	$('#'+lineId).offset({ top: lineStartHeight, left: leftPosition})
+	
+	
+	return pageWidth+" "+pageHeight+" "+lineStartHeight+" " + leftPosition + " " +lineWidth;
 }
 
 function determineCurrentWord(currentAudioTime, line) {

@@ -9,8 +9,12 @@ SET VIDEO_SILENT=%ROOT_LOCATION%\videoGenerator\videoSilent
 SET MP3=%ROOT_LOCATION%\videoGenerator\mp3
 SET VIDEO=%ROOT_LOCATION%\videoGenerator\video
 
+@echo %time%
+
 MKDIR %GENERATED_FRAMES%
-%PHANTOM_BINARY% %PHANTOM_SCRIPTS%\takeLoadsOfScreenshots.js 1 6250 %GENERATED_FRAMES%
+%PHANTOM_BINARY% %PHANTOM_SCRIPTS%\takeLoadsOfScreenshots.js 1 500 %GENERATED_FRAMES% 25 1920 1080
 %FFMPEG_BINARY% -i %GENERATED_FRAMES%image_%%05d.jpg -c:v libx264 -preset slow -crf 1 -pix_fmt yuv420p   -y %VIDEO_SILENT%\out1.mp4
-%FFMPEG_BINARY% -i %VIDEO_SILENT%\out1.mp4   -i %MP3%\go.mp3 -c:v copy -c:a copy -y %VIDEO%\output3.mp4
-RMDIR /S/Q %GENERATED_FRAMES%
+%FFMPEG_BINARY% -i %VIDEO_SILENT%\out1.mp4   -i %MP3%\dynamite.mp3 -c:v copy -c:a copy -y %VIDEO%\output3.mp4
+REM RMDIR /S/Q %GENERATED_FRAMES%
+
+@echo %time%
