@@ -17,9 +17,28 @@ var start = null;
 
 $(document).ready(function() {
 	console.log("ready!");
-	
+	addEventsToFrameInputs();
 
 });
+
+
+function addEventsToFrameInputs() {
+	$(function() {
+		$("#frameRange").change(function(event) {
+			frameNumber=$("#frameRange").val();
+			$("#frameValue").val(frameNumber);
+			clock(ctx, (frameNumber / fps) * 1000, lyricsObject);
+		});
+	});
+	
+	$(function() {
+		$("#frameValue").change(function(event) {
+			frameNumber=$("#frameValue").val();
+			$("#frameRange").val(frameNumber);
+			clock(ctx, (frameNumber / fps) * 1000, lyricsObject);
+		});
+	});
+}
 
 function step(timestamp) {
 	if (tempFrame < 600) {

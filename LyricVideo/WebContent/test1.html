@@ -37,7 +37,6 @@
 }
 
 .line {
-	width: 100%;
 	overflow: hidden;
 	border: 1px solid black;
 }
@@ -69,14 +68,24 @@ body {
 	padding: 0px;
 	margin: 0px;
 }
+#frameRange
+{
+    width: 800px;
+}
+
 </style>
 
 </head>
 <body>
+
+<div id="controls">
+	<input id="frameRange" type="range" min=0 max=10000 value=2000></input>
+	<input id="frameValue" type="text" value="0"></input>
+</div>
+
 	<canvas id="canvas"></canvas>
 	<div id="page">
 		<div id="lyrics"></div>
-		<div id="lyrics1"></div>
 	</div>
 
 
@@ -88,6 +97,10 @@ body {
 		ctx = canvas.getContext('2d');
 		
 		frameNumber = QueryString.frameNumber;
+		
+		$("#frameRange").val(frameNumber);
+		$("#frameValue").val(frameNumber);
+		
 		fps = QueryString.fps;
 		pageWidth = QueryString.pageWidth;
 		pageHeight = QueryString.pageHeight;

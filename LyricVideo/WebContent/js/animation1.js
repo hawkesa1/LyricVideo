@@ -1,37 +1,65 @@
+
+var linesToDisplay=7;
+
 function clock(ctx, currentAudioTime, lines) {
 	var lineResults = determineCurrentLineAndNextLine(currentAudioTime, lines)
 	var nextLine = lineResults[0];
 	var playingLine = lineResults[1];
 	var lineDisplay = $('#lyrics');
 	var lineDisplay1 = $('#lyrics1');
-	
+
 	lineDisplay.html("");
 	lineDisplay1.html("");
 	var lineDisplayText = "";
-var temp;
-	
+	var temp;
+
 	if (playingLine > -1) {
 		var playingWordIndex = determineCurrentWord(currentAudioTime,
 				lines[playingLine]);
 		console.log(playingWordIndex);
 		var words = lines[playingLine].words;
-		var lineId='line_' + playingLine;
+		var lineId = 'line_' + playingLine;
 		lineDisplayText += "<div id='" + lineId + "' class='line'>";
 		for (var i = 0; i < words.length; i++) {
 			if (i == playingWordIndex) {
 				lineDisplayText += "<div id='line_" + playingLine + "_word_"
-						+ i + "' class='word playing'>" + words[i].word + "</div>";
-			}
-			else
-			{
+						+ i + "' class='word playing'>" + words[i].word
+						+ "</div>";
+			} else {
 				lineDisplayText += "<div id='line_" + playingLine + "_word_"
-				+ i + "' class='word'>" + words[i].word + "</div>";
-			}	
+						+ i + "' class='word'>" + words[i].word + "</div>";
+			}
 		}
-		lineDisplay.html(lineDisplayText);
-		temp = centreLine(lineId, lines[playingLine], currentAudioTime);
+		lineDisplayText += "</div>";
+		
+	}
+	
+	lineDisplay.html(lineDisplayText);
+	
+	
+	//temp = centreLine(lineId, lines[playingLine], currentAudioTime);
+
+	for (var i=1;i<linesToDisplay; i++) {
+		var thisLine=playingLine+i
+		var words = lines[thisLine].words;
+		lineDisplayText="";
+		
+		var lineId = 'line_' + thisLine;
+		lineDisplayText += "<div id='" + lineId + "' class='line'>";
+		for (var i = 0; i < words.length; i++) {
+
+			lineDisplayText += "<div id='line_" + playingLine + "_word_" + i
+					+ "' class='word'>" + words[i].word + "</div>";
+
+		}
+		lineDisplayText += "</div>";
+		lineDisplay.html(lineDisplay.html()+lineDisplayText);
 	}
 
+	
+	//temp = centreLine(lineId, lines[playingLine], currentAudioTime);
+	
+	
 	ctx.save();
 	ctx.fillStyle = 'yellow'
 	ctx.fillRect(0, 0, ctx.canvas.width, ctx.canvas.height);
@@ -42,20 +70,24 @@ var temp;
 	return ctx;
 }
 
-var lineStartHeight=0;
+var lineStartHeight = 0;
 
-function centreLine(lineId,line,currentAudioTime)
-{
-	var lineWidth=$('#'+lineId).width();
-	var leftPosition=(pageWidth-lineWidth)/2;
-	var topPosition=line.endTime-line.startTime
-	
-	lineStartHeight=pageHeight-((currentAudioTime/20000)*pageHeight);
-	
-	$('#'+lineId).offset({ top: lineStartHeight, left: leftPosition})
-	
-	
-	return pageWidth+" "+pageHeight+" "+lineStartHeight+" " + leftPosition + " " +lineWidth;
+function centreLine(lineId, line, currentAudioTime) {
+	var lineWidth = $('#' + lineId).width();
+	// var leftPosition=(pageWidth-lineWidth)/2;
+	var leftPosition = 50;
+	// var topPosition=line.endTime-line.startTime
+
+	// var topPosition=400;
+	// lineStartHeight=pageHeight-((currentAudioTime/20000)*pageHeight);
+	lineStartHeight = 400;
+
+	$('#' + lineId).offset({
+		top : lineStartHeight,
+		left : leftPosition
+	})
+	return pageWidth + " " + pageHeight + " " + lineStartHeight + " "
+			+ leftPosition + " " + lineWidth;
 }
 
 function determineCurrentWord(currentAudioTime, line) {
