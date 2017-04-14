@@ -7,102 +7,56 @@
 <script src="./js/jquery/jquery-3.1.0.min.js"></script>
 <script src="./js/animation1.js"></script>
 <script src="./js/main.js"></script>
+<script src="./js/testInitiation.js"></script>
+
+<link rel="stylesheet" href="css/page.css" media="screen" />
 
 <style>
-@font-face {
-	font-family: RubikOne;
-	src: url(RubikOne-Regular.ttf);
-}
-
-.word {
-	font-size: 100px;
-	font-family: 'RubikOne';
-	-webkit-text-fill-color: white;
-	/* Will override color (regardless of order) */
-	-webkit-text-stroke-width: 5px;
-	-webkit-text-stroke-color: #002966;
-	border: 0px solid black;
-	float: left;
-	padding-right: 10px;
-	font-variant: small-caps;
-	opacity: 1;
-}
-
-.playing {
-	font-size: 100px;
-	-webkit-text-fill-color: #ffb3ff;
-	/* Will override color (regardless of order) */
-	-webkit-text-stroke-color: #ff00ff;
-	position:relative;
-}
-
-.line {
-	overflow: hidden;
-	border: 1px solid black;
-}
-
-#canvas {
-	border: 1px solid black;
-}
-
-#page {
-	border: 1px solid blue;
-	position: absolute;
-	width:100%;
-	top: 0px;
-	left: 0px;
-	top: 0px;
-}
-
-#lyrics {
-	position: absolute;
-	top: 200px;
-}
-#lyrics1 {
-	position: absolute;
-	top: 400px;
-}
-
-body {
-	border: 0px;
-	padding: 0px;
-	margin: 0px;
-}
-#frameRange
-{
-    width: 800px;
-}
-
 </style>
 
 </head>
 <body>
 
-<div id="controls">
-	<input id="frameRange" type="range" min=0 max=10000 value=2000></input>
-	<input id="frameValue" type="text" value="0"></input>
-</div>
+	<div id="controls">
+		<input id="frameRange" type="range" min=0 max=10000 value=2000></input>
+		<input id="frameValue" type="text" value="0"></input>
+	</div>
 
 	<canvas id="canvas"></canvas>
+	
 	<div id="page">
 		<div id="lyrics"></div>
 	</div>
+	
 	<script>
 		//Has to run before the document is ready, otherwise phantomJS misses it
-		lyricsObject = JSON.parse(lyrics);
+		
+		//Parse the JSON lyrics in to objects
+		lyricsObject = JSON.parse(HARD_CODED_LYRICS);
+		
+		//Get reference to the canvas and context
 		canvas = document.getElementById('canvas');
 		ctx = canvas.getContext('2d');
+		
+		//Get parameters passed in from the URL
 		frameNumber = QueryString.frameNumber;
-		$("#frameRange").val(frameNumber);
-		$("#frameValue").val(frameNumber);
 		fps = QueryString.fps;
 		pageWidth = QueryString.pageWidth;
 		pageHeight = QueryString.pageHeight;
-		canvas.width=pageWidth;
-		canvas.height=pageHeight;
+		
+		//Display it on the page
+		$("#frameRange").val(frameNumber);
+		$("#frameValue").val(frameNumber);
+		
+		canvas.width = pageWidth;
+		canvas.height = pageHeight;
 		console.log("Logging framenumber: " + QueryString.frameNumber);
+		
+		//http://localhost:8080/LyricVideo/test1.html?frameNumber=200&fps=60&pageWidth=800&pageHeight=600
+		
+		// If a frameNumber has been passed in the URL, only draw that frame, otherwise begin animation
 		if (frameNumber > 0) {
-			clock(ctx, (frameNumber / fps) * 1000, lyricsObject);
+			drawIt(ctx, (frameNumber / fps) * 1000, lyricsObject);
 		} else {
 			window.requestAnimationFrame(step);
 		}
