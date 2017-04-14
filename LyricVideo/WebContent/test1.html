@@ -87,29 +87,20 @@ body {
 	<div id="page">
 		<div id="lyrics"></div>
 	</div>
-
-
-
 	<script>
 		//Has to run before the document is ready, otherwise phantomJS misses it
 		lyricsObject = JSON.parse(lyrics);
 		canvas = document.getElementById('canvas');
 		ctx = canvas.getContext('2d');
-		
 		frameNumber = QueryString.frameNumber;
-		
 		$("#frameRange").val(frameNumber);
 		$("#frameValue").val(frameNumber);
-		
 		fps = QueryString.fps;
 		pageWidth = QueryString.pageWidth;
 		pageHeight = QueryString.pageHeight;
-		
 		canvas.width=pageWidth;
 		canvas.height=pageHeight;
-		
 		console.log("Logging framenumber: " + QueryString.frameNumber);
-
 		if (frameNumber > 0) {
 			clock(ctx, (frameNumber / fps) * 1000, lyricsObject);
 		} else {

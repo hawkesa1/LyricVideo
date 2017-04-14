@@ -67,6 +67,18 @@ function clock(ctx, currentAudioTime, lines) {
 	ctx.fillStyle = "red";
 	ctx.fillText(temp, 10, 550);
 	ctx.restore();
+	
+	
+	 ctx.beginPath();
+	 ctx.rect(50, 50, 200, 100);
+	 ctx.fillStyle = 'red';
+	 ctx.fill();
+	 ctx.lineWidth = 7;
+	 ctx.strokeStyle = 'black';
+	 ctx.stroke();
+	
+	
+	
 	return ctx;
 }
 
@@ -74,14 +86,8 @@ var lineStartHeight = 0;
 
 function centreLine(lineId, line, currentAudioTime) {
 	var lineWidth = $('#' + lineId).width();
-	// var leftPosition=(pageWidth-lineWidth)/2;
 	var leftPosition = 50;
-	// var topPosition=line.endTime-line.startTime
-
-	// var topPosition=400;
-	// lineStartHeight=pageHeight-((currentAudioTime/20000)*pageHeight);
 	lineStartHeight = 400;
-
 	$('#' + lineId).offset({
 		top : lineStartHeight,
 		left : leftPosition
@@ -96,12 +102,10 @@ function determineCurrentWord(currentAudioTime, line) {
 
 	if (currentAudioTime < words[0].startTime)// before first word
 	{
-
 		playingWord = -1;
 	} else if (currentAudioTime > words[words.length - 1].endTime) // after
 	// last word
 	{
-
 		playingWord = -1;
 	} else {
 		for (var i = 0; i < words.length; i++) {
@@ -125,7 +129,6 @@ function determineCurrentWord(currentAudioTime, line) {
 		}
 	}
 	return playingWord;
-
 }
 
 function determineCurrentLineAndNextLine(currentAudioTime, lines) {
