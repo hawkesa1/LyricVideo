@@ -8,19 +8,29 @@ function drawIt(ctx, currentAudioTime, lines) {
 	var CURRENT_TIME_POSITION=200;
 	var ZOOM_LEVEL=6;
 	var BACKGROUND_COLOUR='black';
-	var TEXT_COLOUR='white';
-	
+	var TEXT_COLOUR='#8B0000';
+	var BOX_FILL_COLOUR='white';
+	var BOX_OUTLINE_COLOUR='#7FFF00';
 	
 	// draw the background
-	ctx.save();
-	ctx.fillStyle = BACKGROUND_COLOUR;
-	ctx.fillRect(0, 0, ctx.canvas.width, ctx.canvas.height);
-	ctx.restore();
+	//ctx.save();
+	//ctx.globalAlpha = 1;
+	//ctx.fillStyle = BACKGROUND_COLOUR;
+	//ctx.fillRect(0, 0, ctx.canvas.width, ctx.canvas.height);
+	//ctx.restore();
+	
+	//ctx.save();
+	//ctx.globalAlpha = 0;
+	//ctx.fillStyle = BACKGROUND_COLOUR;
+	//ctx.fillRect(0, 0, ctx.canvas.width, ctx.canvas.height);
+	//ctx.restore();
+	
+	ctx.clearRect(0, 0, canvas.width, canvas.height);
 	
 	var aLine;
 	var aWord;
 	var xPosition;
-	var yPosition;
+	var yPosition=0;
 	var wordWidth=0;
 
 	
@@ -31,22 +41,34 @@ function drawIt(ctx, currentAudioTime, lines) {
 		{
 			for(var j=0; j<aLine.words.length;j++)
 			{
+				if(j==0)
+				{
+					yPosition=10;
+				}	
+				if(j%15==0)
+				{
+					yPosition=10;
+				}	
+				
 				aWord=aLine.words[j];
 				xPosition=((aWord.startTime-currentAudioTime)/ZOOM_LEVEL)+CURRENT_TIME_POSITION;
-				yPosition=(200 + (j*60));
+				yPosition=yPosition+60;
 				wordWidth=(aWord.endTime-aWord.startTime)/ZOOM_LEVEL;
 
 				 ctx.beginPath();
+				 ctx.globalAlpha = 0.2;
+				 ctx.fillStyle = BOX_FILL_COLOUR;
+				 ctx.strokeStyle = BOX_OUTLINE_COLOUR;
 				 ctx.rect(xPosition, yPosition, wordWidth, 60);
-				 ctx.font = "small-caps 60px Arial";
-				 ctx.strokeStyle = TEXT_COLOUR;
-				 ctx.fillStyle = TEXT_COLOUR;
-				 ctx.fillText(aWord.word, xPosition-5, yPosition-12);
-				 ctx.fillStyle = 'red';
 				 ctx.fill();
-				 ctx.lineWidth = 1;
-				 ctx.strokeStyle = TEXT_COLOUR;
+				 ctx.lineWidth = 2;
 				 ctx.stroke();
+				 
+				 ctx.globalAlpha = 1;
+				 
+				 ctx.font = "small-caps 40px Arial";
+				 ctx.fillStyle = TEXT_COLOUR;
+				 ctx.fillText(aWord.word, xPosition-5, yPosition-16);
 
 			}	
 		}
@@ -58,35 +80,20 @@ function drawIt(ctx, currentAudioTime, lines) {
 	
 	//Current time Line
 	 ctx.beginPath();
+	 ctx.fillStyle = BOX_FILL_COLOUR;
+	 ctx.strokeStyle = BOX_OUTLINE_COLOUR;
 	 ctx.rect(CURRENT_TIME_POSITION, 0, 10, ctx.canvas.height);
-	 ctx.fillStyle = 'red';
+	 
 	 ctx.fill();
 	 ctx.lineWidth = 1;
 	 ctx.strokeStyle = TEXT_COLOUR;
 	 ctx.stroke();
 
 	 
+
 	 
-	 ctx.beginPath();
-	 ctx.rect(0, 0, ctx.canvas.width, 100);
-	 ctx.fillStyle = 'white';
-	 ctx.fill();
-	 ctx.lineWidth = 1;
-	 ctx.strokeStyle = TEXT_COLOUR;
-	 ctx.stroke();
+	 
 	
-	 ctx.beginPath();
-	 ctx.rect(0, ctx.canvas.height-100, ctx.canvas.width, 100);
-	 ctx.fillStyle = 'white';
-	 ctx.fill(); 
-	 ctx.lineWidth = 1;
-	 ctx.strokeStyle = TEXT_COLOUR;
-	 
-	 
-	 ctx.font = "small-caps 40px Arial";
-	 ctx.strokeStyle = TEXT_COLOUR;
-	 ctx.fillStyle = TEXT_COLOUR;
-	 ctx.fillText("The shit that you promote", 100, ctx.canvas.height-25);
 	 
 	 ctx.stroke();
 	 

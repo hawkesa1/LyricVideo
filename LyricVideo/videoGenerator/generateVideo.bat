@@ -11,10 +11,10 @@ SET VIDEO=%ROOT_LOCATION%\videoGenerator\video
 
 @echo %time%
 
-SET FPS=30
+SET FPS=60
 
 MKDIR %GENERATED_FRAMES%
-%PHANTOM_BINARY% %PHANTOM_SCRIPTS%\takeLoadsOfScreenshots.js 1 6000 %GENERATED_FRAMES% %FPS% 1920 1080
+%PHANTOM_BINARY% %PHANTOM_SCRIPTS%\takeLoadsOfScreenshots.js 1 1200 %GENERATED_FRAMES% %FPS% 1920 1080
 REM %FFMPEG_BINARY% -i %GENERATED_FRAMES%image_%%05d.jpg -framerate %FPS% -c:v libx264 -preset slow -crf 1 -pix_fmt yuv420p   -y %VIDEO_SILENT%\out1.mp4
 %FFMPEG_BINARY% -r %FPS% -i %GENERATED_FRAMES%image_%%05d.jpg -c:v libx264 -preset slow -crf 1 -pix_fmt yuv420p   -y %VIDEO_SILENT%\out1.mp4
 %FFMPEG_BINARY% -r %FPS% -i %VIDEO_SILENT%\out1.mp4 -i %MP3%\hardest.mp3 -c:v copy -c:a copy -y %VIDEO%\output3.mp4

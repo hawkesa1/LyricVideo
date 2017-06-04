@@ -12,6 +12,16 @@
 <link rel="stylesheet" href="css/page.css" media="screen" />
 
 <style>
+#backgroundImageContainer {
+	position: absolute;
+	top: 30px;
+	left: 0px; 
+	width : 1920px;
+	height: 1080px;
+	background-image: url('./images/savanna.jpg');
+	width: 1920px;
+	z-index:-999;
+}
 </style>
 
 </head>
@@ -22,11 +32,12 @@
 		<input id="frameValue" type="text" value="0"></input>
 	</div>
 
+
+
+
 	<canvas id="canvas"></canvas>
 
-	<div id="page">
-		<div id="lyrics"></div>
-	</div>
+
 
 	<script>
 		//Has to run before the document is ready, otherwise phantomJS misses it
@@ -60,9 +71,12 @@
 		} else {
 			window.requestAnimationFrame(step);
 		}
+		
+		
+		
 	</script>
 
 
-
+<div id="backgroundImageContainer"></div>
 </body>
 </html>
