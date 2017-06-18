@@ -12,17 +12,16 @@ var fps;
 var pageWidth;
 var pageHeight;
 
-
 var tempFrame = 1;
 var start = null;
+var fontFamily="Comicate";
 
 $(document).ready(function() {
 	console.log("ready!");
-		addEventsToFrameInputs();
+	
+	
+	addEventsToFrameInputs();
 });
-
-
-
 
 var QueryString = function() {
 	// This function is anonymous, is executed immediately and

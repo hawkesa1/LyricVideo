@@ -5,32 +5,51 @@
 <title>Insert title here</title>
 
 <script src="./js/jquery/jquery-3.1.0.min.js"></script>
-<script src="./js/animation1.js"></script>
+
+<script src="./js/animation2.js"></script>
 <script src="./js/main.js"></script>
 <script src="./js/testInitiation.js"></script>
 
 <link rel="stylesheet" href="css/page.css" media="screen" />
 
+
+<link rel="stylesheet" type="text/css"
+	href="./js/googleFonts/fontselect.css" />
+<script src="./js/googleFonts/jquery.fontselect.js"></script>
+
+
+<link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+
+
+
 <style>
+
+
+
+
+
 #backgroundImageContainer {
 	position: absolute;
 	top: 30px;
-	left: 0px; 
-	width : 1920px;
-	height: 1080px;
-	background-image: url('./images/savanna.jpg');
+	left: 0px;
+	width: 800px;
+	height: 600px;
 	width: 1920px;
-	z-index:-999;
+	z-index: -999;
 }
 </style>
 
 </head>
 <body>
 
-	<div id="controls">
-		<input id="frameRange" type="range" min=0 max=10000 value=2000></input>
-		<input id="frameValue" type="text" value="0"></input>
-	</div>
+<audio src="./mp3/hardest.mp3" id="audio">
+			</audio>
+	<div id="backgroundImageContainer"></div>
+
+
+<script>
+setBackgroundImage('./images/streets3.jpg', 800, 600);
+</script>
 
 
 
@@ -67,16 +86,40 @@
 
 		// If a frameNumber has been passed in the URL, only draw that frame, otherwise begin animation
 		if (frameNumber > 0) {
-			drawIt(ctx, (frameNumber / fps) * 1000, lyricsObject);
+			drawIt1(ctx, (frameNumber / fps) * 1000, lyricsObject);
 		} else {
 			window.requestAnimationFrame(step);
 		}
-		
-		
-		
+
+		function alex() {
+			frameNumber++;
+			drawIt1(ctx, (frameNumber / fps) * 1000, lyricsObject);
+			return frameNumber;
+		}
 	</script>
 
 
-<div id="backgroundImageContainer"></div>
+
+	<div id="controls">
+<a href="#" id="playPauseButton">Play</a>
+   <select id="fontSelect">
+     <option style="font-size:30px; font-family: 'Comic Sans MS'" value="Comic Sans MS">Comic Sans MS</option>
+     <option style="font-size:30px; font-family: Arial" value="Arial">Arial</option>
+     <option style="font-size:30px; font-family: 'Times New Roman'" value="Times New Roman">Times New Roman</option>
+     <option style="font-size:30px; font-family: 'Pacifico'" value="Pacifico" selected>Pacifico</option>
+   
+				
+			
+  </select>
+  
+  
+		<input id="font" type="text" /> <input id="frameRange" type="range"
+			min=0 max=10000 value=2000></input> <input id="frameValue"
+			type="text" value="0"></input> <input id="framwidth" type="text"
+			value="0"></input> <input id="frameHeight" type="text" value="0"></input>
+		<input id="frameBackgroundFile" type="file" name="pic"
+			accept="image/*">
+	</div>
+
 </body>
 </html>
