@@ -5,114 +5,147 @@
 <title>Insert title here</title>
 
 <script src="./js/jquery/jquery-3.1.0.min.js"></script>
-
 <script src="./js/animation2.js"></script>
 <script src="./js/main.js"></script>
 <script src="./js/testInitiation.js"></script>
 
 <link rel="stylesheet" href="css/page.css" media="screen" />
-
-
-<link rel="stylesheet" type="text/css"
-	href="./js/googleFonts/fontselect.css" />
-<script src="./js/googleFonts/jquery.fontselect.js"></script>
-
-
-<link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
-
-
+<link rel="stylesheet" href="css/fonts.css" media="screen" />
 
 <style>
-
-
-
-
-
-#backgroundImageContainer {
-	position: absolute;
-	top: 30px;
-	left: 0px;
-	width: 800px;
-	height: 600px;
-	width: 1920px;
-	z-index: -999;
-}
 </style>
 
 </head>
 <body>
 
-<audio src="./mp3/hardest.mp3" id="audio">
-			</audio>
+
+	<audio src="./mp3/hardest.mp3" id="audio">
+	</audio>
 	<div id="backgroundImageContainer"></div>
 
 
-<script>
-setBackgroundImage('./images/streets3.jpg', 800, 600);
-</script>
 
-
-
+	<script>
+		setBackgroundImage('./images/harrystyles1.jpg', 800, 600);
+	</script>
 
 	<canvas id="canvas"></canvas>
 
 
 
-	<script>
-		//Has to run before the document is ready, otherwise phantomJS misses it
-
-		//Parse the JSON lyrics in to objects
-		lyricsObject = JSON.parse(HARD_CODED_LYRICS);
-
-		//Get reference to the canvas and context
-		canvas = document.getElementById('canvas');
-		ctx = canvas.getContext('2d');
-
-		//Get parameters passed in from the URL
-		frameNumber = QueryString.frameNumber;
-		fps = QueryString.fps;
-		pageWidth = QueryString.pageWidth;
-		pageHeight = QueryString.pageHeight;
-
-		//Display it on the page
-		$("#frameRange").val(frameNumber);
-		$("#frameValue").val(frameNumber);
-
-		canvas.width = pageWidth;
-		canvas.height = pageHeight;
-		console.log("Logging framenumber: " + QueryString.frameNumber);
-
-		//http://localhost:8080/LyricVideo/test1.html?frameNumber=200&fps=60&pageWidth=800&pageHeight=600
-
-		// If a frameNumber has been passed in the URL, only draw that frame, otherwise begin animation
-		if (frameNumber > 0) {
-			drawIt1(ctx, (frameNumber / fps) * 1000, lyricsObject);
-		} else {
-			window.requestAnimationFrame(step);
-		}
-
-		function alex() {
-			frameNumber++;
-			drawIt1(ctx, (frameNumber / fps) * 1000, lyricsObject);
-			return frameNumber;
-		}
-	</script>
-
-
-
 	<div id="controls">
-<a href="#" id="playPauseButton">Play</a>
-   <select id="fontSelect">
-     <option style="font-size:30px; font-family: 'Comic Sans MS'" value="Comic Sans MS">Comic Sans MS</option>
-     <option style="font-size:30px; font-family: Arial" value="Arial">Arial</option>
-     <option style="font-size:30px; font-family: 'Times New Roman'" value="Times New Roman">Times New Roman</option>
-     <option style="font-size:30px; font-family: 'Pacifico'" value="Pacifico" selected>Pacifico</option>
-   
-				
-			
-  </select>
-  
-  
+		<a href="#" id="playPauseButton">Play</a>
+
+		<div>
+			Font: <select id="fontSelect">
+				<option style="font-size: 20px; font-family: 'Comic Sans MS'"
+					value="Comic Sans MS">Comic Sans MS</option>
+				<option style="font-size: 20px; font-family: Arial" value="Arial">Arial</option>
+				<option style="font-size: 20px; font-family: 'XXon XXoff'"
+					value="XXon XXoff">XXon XXoff</option>
+				<option style="font-size: 20px; font-family: 'Comicate'"
+					value="Comicate" selected>Comicate</option>
+
+				<option style="font-size: 20px; font-family: 'C rial'"
+					value="C rial" selected>C rial</option>
+
+
+			</select>
+			<div>
+				Selected font Colour: <input id="selectedFontColour" type="color"
+					name="selectedFontColour" value="#000000"> <BR>
+				Unselected font Colour: <input id="unselectedFontColour"
+					type="color" name="unselectedFontColour" value="#ff0000">
+			</div>
+
+			<div>
+				Shadow Colour: <input id="shadowColour" type="color"
+					name="shadowColour" value="#000000">
+			</div>
+			<div>
+				Shadow Offset X: <input id="shadowOffsetX" type="range"
+					name="shadowOffsetX" value="5" min="0" max="10">
+			</div>
+			<div>
+				Shadow Offset Y: <input id="shadowOffsetY" type="range"
+					name="shadowOffsetY" value="5" min="0" max="10">
+			</div>
+			<div>
+				Font Size: <input id="fontSize" type="range" name="fontSize"
+					value="40" min="10" max="100">
+			</div>
+
+			<div>
+				Selected Opacity: <input id="selectedOpacity" type="range"
+					name="selectedOpacity" value="0.5" min="0" max="1" step="0.1">
+			</div>
+			<div>
+				Unselected Opacity: <input id="unselectedOpacity" type="range"
+					name="unselectedOpacity" value="0.5" min="0" max="1" step="0.1">
+			</div>
+			<div>
+				shadowBlur: <input id="shadowBlur" type="range" name="shadowBlur"
+					value="7" min="0" max="20">
+			</div>
+
+
+			<div>
+				textX: <input id="textX" type="range" name="textX" value="20"
+					min="0" max="600">
+			</div>
+			<div>
+				texty: <input id="texty" type="range" name="texty" value="20"
+					min="40" max="600">
+			</div>
+			<div>
+				textWidth: <input id="textWidth" type="range" name="textWidth"
+					value="400" min="200" max="800">
+			</div>
+			<div>
+				textHeight: <input id="textHeight" type="range" name="textHeight"
+					value="600" min="300" max="600">
+			</div>
+
+
+			<div>
+				backgroundColour: <input id="backgroundColour" type="color"
+					name="backgroundColour" value="#000000">
+			</div>
+			<div>
+				backgroundShadowColour: <input id="backgroundShadowColour"
+					type="color" name="backgroundShadowColour" value="#000000">
+			</div>
+
+
+			<div>
+				lineSpacing <input id="lineSpacing" type="range" name="lineSpacing"
+					value="40" min="0" max="200">
+			</div>
+			<div>
+				backgroundOpacity <input id="backgroundOpacity" type="range"
+					name="backgroundOpacity" value="0.5" min="0" max="1" step="0.1">
+			</div>
+
+			<div>
+				backgroundShadowOffsetX <input id="backgroundShadowOffsetX"
+					type="range" name="backgroundShadowOffsetX" value="5" min="0"
+					max="10">
+			</div>
+			<div>
+				backgroundShadowOffsetY <input id="backgroundShadowOffsetY"
+					type="range" name="backgroundShadowOffsetY" value="5" min="0"
+					max="10">
+			</div>
+			<div>
+				backgroundShadowBlur <input id="backgroundShadowBlur" type="range"
+					name="backgroundShadowBlur" value="7" min="0" max="20">
+			</div>
+
+
+
+
+		</div>
+
 		<input id="font" type="text" /> <input id="frameRange" type="range"
 			min=0 max=10000 value=2000></input> <input id="frameValue"
 			type="text" value="0"></input> <input id="framwidth" type="text"

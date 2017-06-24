@@ -1,12 +1,12 @@
 var fs = require('fs');
 var system = require('system');
 var args = system.args;
-var frameNumber = system.args[1];
-var maxFrames = system.args[2];
+var frameNumber = parseInt(system.args[1]);
+var maxFrames = parseInt(system.args[2]);
 var frameLocation = system.args[3];
-var fps = system.args[4];
-var pageWidth=system.args[5];
-var pageHeight=system.args[6];
+var fps = parseInt(system.args[4]);
+var pageWidth=parseInt(system.args[5]);
+var pageHeight=parseInt(system.args[6]);
 
 var page = require('webpage').create();
 
@@ -27,17 +27,29 @@ function helloAlex(frameNumber) {
 	page.onLoadFinished = function(status) {
 	
 		page.clipRect = {
-		    top:    0,
-		    left:   0,
+		    top:    11,
+		    left:   11,
 		    width:  pageWidth,
 		    height: pageHeight
 		};
 	
-	console.log("Start generating frames.");
+	console.log("Start generating frames: "+ frameNumber +" " + maxFrames);
 	var location="";
 	var script1 = "function(){alex();}";
 	var j = 0;
+	
+	if(frameNumber < maxFrames)
+	{
+	console.log("Yes");
+	}
+	else
+	{
+	console.log("No");
+	}
+	
+	
 	while (frameNumber < maxFrames) {
+	console.log("Fucking hell");
 			location=frameLocation + "image_" + pad(frameNumber, 5) + '.jpg';
 			page.evaluateJavaScript(script1)
 			{
