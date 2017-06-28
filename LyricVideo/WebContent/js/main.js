@@ -12,48 +12,35 @@ var pageWidth;
 var pageHeight;
 var tempFrame = 1;
 var start = null;
-var fontFamily = "C rial";
 
 
-var shadowOffsetX = 5;
-var shadowOffsetY = 5;
-var fontSize = 40;
-var shadowBlur = 7;
-var selectedOpacity = 1;
-var unselectedOpacity = 0.8;
 
-var textX=20;
-var texty=60;
-var textWidth=300;
-var textHeight=300;
 
-var backgroundColour='#000000';
-var backgroundOpacity=0.2;
-var backgroundShadowColour='#000000';
-var backgroundShadowOffsetX=5;
-var backgroundShadowOffsetY=10;
-var backgroundShadowBlur=5;
-var lineSpacing=40;
+
+
+
+
+
 
 
 
 $(document).ready(function() {
 	console.log("ready!");
-	
-	//Parse the JSON lyrics in to objects
+
+	// Parse the JSON lyrics in to objects
 	lyricsObject = JSON.parse(HARD_CODED_LYRICS);
 
-	//Get reference to the canvas and context
+	// Get reference to the canvas and context
 	canvas = document.getElementById('canvas');
 	ctx = canvas.getContext('2d');
 
-	//Get parameters passed in from the URL
+	// Get parameters passed in from the URL
 	frameNumber = QueryString.frameNumber;
 	fps = QueryString.fps;
 	pageWidth = QueryString.pageWidth;
 	pageHeight = QueryString.pageHeight;
 
-	//Display it on the page
+	// Display it on the page
 	$("#frameRange").val(frameNumber);
 	$("#frameValue").val(frameNumber);
 
@@ -61,38 +48,14 @@ $(document).ready(function() {
 	canvas.height = pageHeight;
 	console.log("Logging framenumber: " + QueryString.frameNumber);
 
-	//http://localhost:8080/LyricVideo/test1.html?frameNumber=200&fps=60&pageWidth=800&pageHeight=600
-	$('#unselectedFontColour').val(unselectedFontColour);
-	$('#selectedFontColour').val(selectedFontColour);
-	$('#shadowColour').val(shadowColour);
-	
-	$('#shadowOffsetX').val(shadowOffsetX);
-	$('#shadowOffsetY').val(shadowOffsetY);
-	$('#fontSize').val(fontSize);
-	$('#shadowBlur').val(shadowBlur);
-	$('#selectedOpacity').val(selectedOpacity);
-	$('#unselectedOpacity').val(unselectedOpacity);
-	
-	$('#textX').val(textX);
-	$('#texty').val(texty);
-	$('#textWidth').val(textWidth);
-	$('#textHeight').val(textHeight);
-
-	
-	
+	// http://localhost:8080/LyricVideo/test1.html?frameNumber=200&fps=60&pageWidth=800&pageHeight=600
 	
 
-
-	
-	
-	
-	
-	
 	addEventsToFrameInputs();
 	loadFonts();
-	
+
 	drawIt1(ctx, (frameNumber / fps) * 1000, lyricsObject);
-	
+
 });
 
 function alex() {
@@ -101,10 +64,8 @@ function alex() {
 	return frameNumber;
 }
 
-
 function loadFonts() {
-	
-	
+
 }
 
 var QueryString = function() {

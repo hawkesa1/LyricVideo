@@ -22,7 +22,7 @@
 	-webkit-text-fill-color: #ffb3ff;
 	/* Will override color (regardless of order) */
 	-webkit-text-stroke-color: #ff00ff;
-	position:relative;
+	position: relative;
 }
 
 .line {
@@ -32,10 +32,10 @@
 
 #canvas {
 	z-index: 999;
-	position:absolute;
-	left:10px;
-	top:10px;
-	border:1px solid black;
+	position: absolute;
+	left: 10px;
+	top: 10px;
+	border: 1px solid black;
 }
 
 #backgroundImageContainer {
@@ -44,14 +44,13 @@
 	left: 10px;
 	width: 800px;
 	height: 600px;
-	
 	z-index: -999;
 }
 
 #page {
 	border: 1px solid blue;
 	position: absolute;
-	width:100%;
+	width: 100%;
 	top: 0px;
 	left: 0px;
 	top: 0px;
@@ -61,6 +60,7 @@
 	position: absolute;
 	top: 200px;
 }
+
 #lyrics1 {
 	position: absolute;
 	top: 400px;
@@ -71,15 +71,21 @@ body {
 	padding: 0px;
 	margin: 0px;
 }
-#frameRange
-{
-    width: 800px;
+
+#frameRange {
+	width: 800px;
 }
 
-#controls
-{
-	position:absolute;
-	top:10px;
-	left:850px;
-	
+.parameterGroupLabel {
+	text-decoration: underline;
+}
+
+#controls {
+	position: absolute;
+	top: 10px;
+	left: 850px;
+	overflow-y: scroll;
+	border: 1px solid black;
+	width: 600px;
+	height: 600px;
 }
