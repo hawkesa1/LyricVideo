@@ -38,10 +38,22 @@
 	border: 1px solid black;
 }
 
-#backgroundImageContainer {
+#backgroundImageContainerContainer
+{
 	position: absolute;
 	top: 10px;
 	left: 10px;
+	width: 800px;
+	height: 600px;
+	z-index: -999;
+	overflow:hidden;
+	border: 1px solid blue;
+}
+
+
+#backgroundImageContainer {
+	
+	position:absolute;
 	width: 800px;
 	height: 600px;
 	z-index: -999;
@@ -70,6 +82,7 @@ body {
 	border: 0px;
 	padding: 0px;
 	margin: 0px;
+	background-color:white;
 }
 
 #frameRange {

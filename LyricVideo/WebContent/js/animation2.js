@@ -14,8 +14,16 @@ var BOX_OUTLINE_COLOUR = 'white';
 function drawIt1(ctx, currentAudioTime, lines) {
 
 	setBackgroundImageRotation(parameterValues.backgroundImageRotation);
+	setBackgroundImageRepeat(parameterValues.backgroundRepeat);
+	setBackgroundContainerSize(parameterValues.backgroundContainerWidth,
+			parameterValues.backgroundContainerHeight);
 	setBackgroundImageSize(parameterValues.backgroundImageHeight,
-			parameterValues.backgroundImageWidth)
+			parameterValues.backgroundImageWidth);
+	setBackgroundImagePosition(parameterValues.backgroundImagePositionX,
+			parameterValues.backgroundImagePositionY);
+	setBackgroundContainerPosition(
+			parameterValues.backgroundContainerPositionY,
+			parameterValues.backgroundContainerPositionX)
 
 	ctx.clearRect(0, 0, canvas.width, canvas.height);
 
@@ -78,13 +86,13 @@ function drawIt1(ctx, currentAudioTime, lines) {
 						ctx.shadowOffsetY = parameterValues.selectedShadowOffsetY;
 						ctx.shadowBlur = parameterValues.selectedShadowBlur;
 					}
-					ctx.font = parameterValues.fontSize + "px " + parameterValues.fontFamily;
+					ctx.font = parameterValues.fontSize + "px "
+							+ parameterValues.fontFamily;
 					ctx.textBaseline = 'alphabetic';
 
 					ctx.globalAlpha = selectedOpacity;
 					ctx.fillStyle = parameterValues.selectedFontColour;
 					selectedFontSize = parseInt(parameterValues.fontSize) + 0;
-					console.log("fontFamily:" + parameterValues.fontFamily);
 					ctx.font = selectedFontSize + "px "
 							+ parameterValues.fontFamily;
 					wordSpace = ctx.measureText(aWord.word).width - wordWidth;
@@ -94,7 +102,6 @@ function drawIt1(ctx, currentAudioTime, lines) {
 					xPosition = xPosition
 							+ ctx.measureText(aWord.word).width
 							+ ((parameterValues.characterSpacing - 0) - wordSpace);
-					console.log();
 				} else {
 					ctx.save();
 					if (parameterValues.unselectedShadowShow) {
@@ -127,19 +134,35 @@ function setBackgroundImageSize(width, height) {
 			height + "px " + width + "px");
 }
 
-function setBackgroundImage(imageUrl, width, height) {
-	$("#backgroundImageContainer").css("background-image",
-			"url(" + imageUrl + ")");
-	$("#backgroundImageContainer").css("background-repeat", "no-repeat");
-	$("#backgroundImageContainer").css("background-size",
-			height + "px " + width + "px");
+function setBackgroundContainerPosition(top, left) {
+	$("#backgroundImageContainer").css("top", top + "px");
+	$("#backgroundImageContainer").css("left", left + "px");
 }
+function setBackgroundContainerSize(width, height) {
+	$("#backgroundImageContainer").width(width + "px");
+	$("#backgroundImageContainer").height(height + "px");
+}
+
+function setBackgroundImagePosition(x, y) {
+	$("#backgroundImageContainer").css("background-position",
+			x + "px " + y + "px");
+}
+
+function setBackgroundImageRepeat(backgroundRepeat) {
+	$("#backgroundImageContainer").css("background-repeat", backgroundRepeat);
+}
+
+
 
 function setBackgroundImageRotation(rotiationInDegrees) {
 	$('#backgroundImageContainer').css({
 		'-webkit-transform' : 'rotate(' + rotiationInDegrees + 'deg)',
 		'-moz-transform' : 'rotate(' + rotiationInDegrees + 'deg)',
 		'-ms-transform' : 'rotate(' + rotiationInDegrees + 'deg)',
-		'transform' : 'rotate(' + rotiationInDegrees + 'deg)'
+		'transform' : 'rotate(' + rotiationInDegrees + 'deg)',
+		'-ms-transform-origin' : '400px 300px',
+		'-webkit-transform-origin' : '400px 300px',
+		'transform-origin' : '400px 300px'
+
 	});
 }

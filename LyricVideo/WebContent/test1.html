@@ -20,10 +20,11 @@
 <body>
 	<audio src="./mp3/hardest.mp3" id="audio">
 	</audio>
-	<div id="backgroundImageContainer"></div>
-	<script>
-		setBackgroundImage('./images/harrystyles1.jpg', 800, 600);
-	</script>
+	<div id="backgroundImageContainerContainer">
+		<div id="backgroundImageContainer"></div>
+	</div>
+
+	
 	<canvas id="canvas"></canvas>
 	<div id="controls">
 		<a href="#" id="playPauseButton">Play</a>
@@ -42,9 +43,11 @@
 			</select>
 		</div>
 		<input id="frameRange" type="range" min=0 max=10000 value=2000></input>
-		<input id="frameValue" type="text" value="0"></input> 
-		
-		<input id="printParameters" type="button" value="Print Parameters"></input>
+		<input id="frameValue" type="text" value="0"></input> <input
+			id="printParameters" type="button" value="Print Parameters"></input>
+		<input id="recordParameters" type="button" value="Record Parameters"></input>
+		<input id="applyParameters" type="button" value="Apply Parameters"></input>
+		<input id="loadParameters" type="button" value="Load Parameters"></input>
 	</div>
 </body>
 </html>

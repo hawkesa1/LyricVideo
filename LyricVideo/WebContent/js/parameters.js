@@ -1,4 +1,5 @@
 var fontFamily = "C rial";
+var BACKGROUND_IMAGE_LOCATION = "/images/";
 
 // font
 var fontSize = 40;
@@ -18,7 +19,10 @@ var shadowOffsetY = 5;
 var shadowBlur = 7;
 var shadowColour = "#000000";
 
-var parameterValues = {}
+var parameterValues = {};
+var parameterSnapshots = {
+	"snapshots" : []
+};
 
 var parameterInitialiser = {
 	"groups" : [ {
@@ -31,33 +35,104 @@ var parameterInitialiser = {
 			"defaultValue" : "",
 			"action" : "change"
 		}, {
-			"label" : "Rotation",
+			"label" : "Repeat",
+			"name" : "backgroundRepeat",
+			"type" : "select",
+			"options" : {
+				"no-repeat" : "No Repeat",
+				"repeat" : "Repeat",
+				"repeat-x" : "Repeat X",
+				"repeat-y" : "Repeat Y"
+			},
+			"action" : "input"
+		}, {
+			"label" : "Background Image Width",
+			"name" : "backgroundImageWidth",
+			"type" : "range",
+			"min" : 0,
+			"max" : 2000,
+			"step" : 1,
+			"defaultValue" : 800,
+			"action" : "input"
+
+		}, {
+			"label" : "Background Image Height",
+			"name" : "backgroundImageHeight",
+			"type" : "range",
+			"min" : 0,
+			"max" : 2000,
+			"step" : 1,
+			"defaultValue" : 600,
+			"action" : "input"
+
+		}, {
+			"label" : "Background Position X",
+			"name" : "backgroundImagePositionX",
+			"type" : "range",
+			"min" : 0,
+			"max" : 2000,
+			"step" : 1,
+			"defaultValue" : 800,
+			"action" : "input"
+
+		}, {
+			"label" : "Background Position Y",
+			"name" : "backgroundImagePositionY",
+			"type" : "range",
+			"min" : 0,
+			"max" : 2000,
+			"step" : 1,
+			"defaultValue" : 800,
+			"action" : "input"
+
+		}, {
+			"label" : "Container Width",
+			"name" : "backgroundContainerWidth",
+			"type" : "range",
+			"min" : 0,
+			"max" : 2000,
+			"step" : 1,
+			"defaultValue" : 800,
+			"action" : "input"
+
+		}, {
+			"label" : "Container Height",
+			"name" : "backgroundContainerHeight",
+			"type" : "range",
+			"min" : 0,
+			"max" : 2000,
+			"step" : 1,
+			"defaultValue" : 600,
+			"action" : "input"
+
+		}, {
+			"label" : "Container Position X",
+			"name" : "backgroundContainerPositionX",
+			"type" : "range",
+			"min" : -2000,
+			"max" : 2000,
+			"step" : 1,
+			"defaultValue" : 0,
+			"action" : "input"
+
+		}, {
+			"label" : "Container Position Y",
+			"name" : "backgroundContainerPositionY",
+			"type" : "range",
+			"min" : -2000,
+			"max" : 2000,
+			"step" : 1,
+			"defaultValue" : 0,
+			"action" : "input"
+
+		}, {
+			"label" : "Container Rotation",
 			"name" : "backgroundImageRotation",
 			"type" : "range",
 			"min" : 0,
 			"max" : 360,
 			"step" : 1,
 			"defaultValue" : 0,
-			"action" : "input"
-
-		}, {
-			"label" : "Width",
-			"name" : "backgroundImageWidth",
-			"type" : "range",
-			"min" : 0,
-			"max" : 800,
-			"step" : 1,
-			"defaultValue" : 800,
-			"action" : "input"
-
-		}, {
-			"label" : "Height",
-			"name" : "backgroundImageHeight",
-			"type" : "range",
-			"min" : 0,
-			"max" : 600,
-			"step" : 1,
-			"defaultValue" : 600,
 			"action" : "input"
 
 		} ]
@@ -69,7 +144,7 @@ var parameterInitialiser = {
 			"name" : "selectedFontColour",
 			"type" : "color",
 			"defaultValue" : "#000000",
-			"action" : "change"
+			"action" : "input"
 		}, {
 			"label" : "Line Height",
 			"name" : "lineHeight",
@@ -102,13 +177,13 @@ var parameterInitialiser = {
 			"name" : "selectedShadowShow",
 			"type" : "checkbox",
 			"defaultValue" : "checked",
-			"action" : "change"
+			"action" : "input"
 		}, {
 			"label" : "Shadow Colour",
 			"name" : "selectedShadowColour",
 			"type" : "color",
 			"defaultValue" : "#000000",
-			"action" : "change"
+			"action" : "input"
 		}, {
 			"label" : "Shadow Offset X",
 			"name" : "selectedShadowOffsetX",
@@ -145,19 +220,19 @@ var parameterInitialiser = {
 			"name" : "unselectedFontColour",
 			"type" : "color",
 			"defaultValue" : "#ffffff",
-			"action" : "change"
+			"action" : "input"
 		}, {
 			"label" : "Shadow",
 			"name" : "unselectedShadowShow",
 			"type" : "checkbox",
 			"defaultValue" : "checked",
-			"action" : "change"
+			"action" : "input"
 		}, {
 			"label" : "Shadow Colour",
 			"name" : "unselectedShadowColour",
 			"type" : "color",
 			"defaultValue" : "#000000",
-			"action" : "change"
+			"action" : "input"
 		}, {
 			"label" : "Shadow Offset X",
 			"name" : "unselectedShadowOffsetX",
@@ -236,13 +311,13 @@ var parameterInitialiser = {
 			"name" : "backgroundShadowShow",
 			"type" : "checkbox",
 			"defaultValue" : "checked",
-			"action" : "change"
+			"action" : "input"
 		}, {
 			"label" : "Shadow Colour",
 			"name" : "backgroundShadowColour",
 			"type" : "color",
 			"defaultValue" : "#F8F8FF",
-			"action" : "change"
+			"action" : "input"
 		}, {
 			"label" : "Shadow Offset X",
 			"name" : "backgroundShadowOffsetX",
@@ -285,8 +360,8 @@ var parameterInitialiser = {
 
 function initialiseParameters() {
 	var groups = parameterInitialiser.groups;
-	parameterValues.fontFamily=fontFamily;
-	
+	parameterValues.fontFamily = fontFamily;
+
 	var html = "";
 
 	// Create the html objects
@@ -299,7 +374,6 @@ function initialiseParameters() {
 	for (var i = 0; i < groups.length; i++) {
 		createParameterGroupEvents(groups[i]);
 	}
-
 	createOtherEventListeners();
 
 	// Collapse to start
@@ -310,7 +384,9 @@ function initialiseParameters() {
 	$('#fontSelect').on('change', function() {
 		parameterValues.fontFamily = this.value;
 		drawIt1(ctx, (frameNumber / fps) * 1000, lyricsObject);
-	})
+	});
+
+	loadParametersFromFile();
 }
 
 function createParameterGroup(parameterGroup) {
@@ -326,7 +402,7 @@ function createParameterGroup(parameterGroup) {
 		html += "<div>";
 		html += createHtmlObject(parameters.label, parameters.name,
 				parameters.type, parameters.defaultValue, parameters.min,
-				parameters.max, parameters.step);
+				parameters.max, parameters.step, parameters.options);
 		html += "</div>";
 
 		// Set the default value
@@ -343,7 +419,6 @@ function createParameterGroupEvents(parameterGroup) {
 			// Animation complete.
 		});
 		console.log("Hid: " + parameterGroup.id + '_content');
-
 	})
 
 	var parameters;
@@ -357,44 +432,121 @@ function createEventListener(parameterName, action, type) {
 	if (type == "range" || type == "color") {
 		$('#' + parameterName).on(action, function() {
 			parameterValues[parameterName] = this.value;
-			console.log(parameterName + " set to: " + this.value);
 			drawIt1(ctx, (frameNumber / fps) * 1000, lyricsObject);
 		})
 	} else if (type == "checkbox") {
 		$('#' + parameterName).on(action, function() {
 			parameterValues[parameterName] = this.checked;
-			console.log(parameterName + " set to: " + this.checked);
 			drawIt1(ctx, (frameNumber / fps) * 1000, lyricsObject);
 		})
 	} else if (type == "file") {
 		// handled separately
+	} else if (type == "select") {
+
+		$('#' + parameterName).on(action, function() {
+			console.log("Changed to:" + this.value);
+			parameterValues[parameterName] = this.value;
+			drawIt1(ctx, (frameNumber / fps) * 1000, lyricsObject);
+		})
+
 	}
 }
 
 function createOtherEventListeners() {
 	$('#' + 'backgroundImage').on('change', function() {
-		parameterValues['backgroundImage'] = this.value;
+
 		var files = !!this.files ? this.files : [];
 		if (!files.length || !window.FileReader)
 			return;
 		if (/^image/.test(files[0].type)) {
 			var reader = new FileReader();
 			reader.readAsDataURL(files[0]);
+			parameterValues['backgroundImage'] = files[0].name;
 			reader.onloadend = function() {
 				setBackgroundImage(this.result, 800, 600);
 			}
 		}
-		console.log(parameterName + " set to: " + this.checked);
+
+		uploadFile();
+
 		drawIt1(ctx, (frameNumber / fps) * 1000, lyricsObject);
 	})
 
 	$('#' + 'printParameters').on('click', function() {
 		console.log(parameterValues);
 	})
+	$('#' + 'recordParameters').on('click', function() {
+		createParameterSnapshot();
+	})
+	$('#' + 'applyParameters').on('click', function() {
+		var parameterSnapshot = parameterSnapshots.snapshots[0];
+		loadParameterSnapshot(parameterSnapshot);
+	})
+	$('#' + 'loadParameters').on('click', function() {
+		loadParametersFromFile();
+	})
+}
+
+function loadParametersFromFile() {
+	$.getJSON("resources/videoScripts/test.json", function(data) {
+		console.log(data);
+		loadParameterSnapshot(data.snapshots[0]);
+	});
+}
+
+var parameterSnapshotId = 0;
+
+function loadParameterSnapshot(parameterSnapshot) {
+	for ( var key in parameterSnapshot.parameterValues) {
+		// console.log(key);
+		if (key == "backgroundImage") {
+			// $('#' + key).val(parameterSnapshot.parameterValues[key]);
+			setBackgroundImage('./images/'
+					+ parameterSnapshot.parameterValues[key], 800, 600);
+		} else {
+			$('#' + key).val(parameterSnapshot.parameterValues[key]);
+			$('#' + key).trigger('input');
+		}
+	}
+}
+
+function setBackgroundImage(imageUrl) {
+
+	imageURL = BACKGROUND_IMAGE_LOCATION + imageUrl;
+	$("#backgroundImageContainer").css("background-image",
+			"url(" + imageUrl + ")");
+
+}
+
+function createParameterSnapshot() {
+	var newSnapshot = {};
+	for ( var key in parameterValues) {
+		console.log("Settingz: " + key + " to " + parameterValues[key]);
+		newSnapshot[key] = parameterValues[key];
+	}
+	parameterSnapshots.snapshots.push({
+		id : parameterSnapshotId,
+		parameterValues : newSnapshot
+	});
+	console.log(parameterSnapshots);
+	download(JSON.stringify(parameterSnapshots), 'test.json',
+			'application/json');
+	parameterSnapshotId++;
+}
+
+function download(text, name, type) {
+	var a = document.createElement("a");
+	var file = new Blob([ text ], {
+		type : type
+	});
+	a.href = URL.createObjectURL(file);
+	a.download = name;
+	a.click();
 }
 
 function createHtmlObject(parameterLabel, parameterName, parameterType,
-		parameterValue, parameterMin, parameterMax, parameterStep) {
+		parameterValue, parameterMin, parameterMax, parameterStep,
+		parameterOptions) {
 	var html = "";
 	html += parameterLabel + " ";
 	if (parameterType == "color") {
@@ -410,10 +562,43 @@ function createHtmlObject(parameterLabel, parameterName, parameterType,
 				+ parameterName + "' value='" + parameterValue + "' "
 				+ parameterValue + "></input>";
 	} else if (parameterType == "file") {
+
+		html += "<form enctype='multipart/form-data'>"
 		html += "<input type='file' id='" + parameterName + "' name='"
 				+ parameterName + "' value='" + parameterValue + "' "
 				+ parameterValue + " accept='image/*'></input>";
+		html += "</form>"
+	} else if (parameterType == "select") {
+		html += "<select id='" + parameterName + "' name='" + parameterName
+				+ "'>";
+		for ( var key in parameterOptions) {
+			html += "<option value='" + key + "'>" + parameterOptions[key]
+					+ "</option>";
+		}
+		html += "</select>";
 	}
-
 	return html;
+}
+
+function uploadFile() {
+	var xhr = new XMLHttpRequest();
+	xhr.open('POST', './FileReceiver');
+	xhr.onload = function(progressEvent) {
+		if (progressEvent.target.response == "ERROR") {
+			console.log("Some sort of error occurred");
+		} else {
+			console.log(progressEvent.target.response);
+			parameterValues['backgroundImage'] = progressEvent.target.response;
+		}
+	};
+	xhr.onerror = function(event) {
+		console.log("Ahh");
+	};
+	xhr.upload.onprogress = function(event) {
+		if (event.lengthComputable) {
+			var complete = (event.loaded / event.total * 100 | 0);
+			console.log(complete);
+		}
+	}
+	xhr.send(new FormData($('form')[0]));
 }

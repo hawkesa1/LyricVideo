@@ -38,24 +38,13 @@ function helloAlex(frameNumber) {
 	var script1 = "function(){alex();}";
 	var j = 0;
 	
-	if(frameNumber < maxFrames)
-	{
-	console.log("Yes");
-	}
-	else
-	{
-	console.log("No");
-	}
-	
-	
 	while (frameNumber < maxFrames) {
-	console.log("Fucking hell");
 			location=frameLocation + "image_" + pad(frameNumber, 5) + '.jpg';
 			page.evaluateJavaScript(script1)
 			{
 						page.render(location, {
 							format : 'jpg',
-							quality : '90'
+							quality : '100'
 						});
 			}
 			frameNumber++;
