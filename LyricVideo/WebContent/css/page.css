@@ -1,34 +1,3 @@
-@font-face {
-	font-family: RubikOne;
-	src: url(RubikOne-Regular.ttf);
-}
-
-.word {
-	font-size: 100px;
-	font-family: 'RubikOne';
-	-webkit-text-fill-color: white;
-	/* Will override color (regardless of order) */
-	-webkit-text-stroke-width: 5px;
-	-webkit-text-stroke-color: #002966;
-	border: 0px solid black;
-	float: left;
-	padding-right: 10px;
-	font-variant: small-caps;
-	opacity: 1;
-}
-
-.playing {
-	font-size: 100px;
-	-webkit-text-fill-color: #ffb3ff;
-	/* Will override color (regardless of order) */
-	-webkit-text-stroke-color: #ff00ff;
-	position: relative;
-}
-
-.line {
-	overflow: hidden;
-	border: 1px solid black;
-}
 
 #canvas {
 	z-index: 999;

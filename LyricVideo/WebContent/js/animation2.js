@@ -1,16 +1,3 @@
-var linesToDisplay = 7;
-var transform = 0;
-var transformDirection = 1;
-var trandformLimit = 50;
-
-var CURRENT_TIME_POSITION = 400;
-var ZOOM_LEVEL = 6;
-
-var selectedFontSize;
-
-var BOX_FILL_COLOUR = 'blue';
-var BOX_OUTLINE_COLOUR = 'white';
-
 function drawIt1(ctx, currentAudioTime, lines) {
 
 	setBackgroundImageRotation(parameterValues.backgroundImageRotation);
@@ -90,7 +77,7 @@ function drawIt1(ctx, currentAudioTime, lines) {
 							+ parameterValues.fontFamily;
 					ctx.textBaseline = 'alphabetic';
 
-					ctx.globalAlpha = selectedOpacity;
+					ctx.globalAlpha = parameterValues.selectedOpacity;
 					ctx.fillStyle = parameterValues.selectedFontColour;
 					selectedFontSize = parseInt(parameterValues.fontSize) + 0;
 					ctx.font = selectedFontSize + "px "
@@ -113,7 +100,7 @@ function drawIt1(ctx, currentAudioTime, lines) {
 					ctx.font = parameterValues.fontSize + "px "
 							+ parameterValues.fontFamily;
 					ctx.textBaseline = 'alphabetic';
-					ctx.globalAlpha = unselectedOpacity;
+					ctx.globalAlpha = parameterValues.unselectedOpacity;
 					ctx.fillStyle = parameterValues.unselectedFontColour;
 					ctx.fillText(aWord.word, xPosition, yPosition);
 					ctx.restore();

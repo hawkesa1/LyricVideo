@@ -1,24 +1,4 @@
-var fontFamily = "C rial";
 var BACKGROUND_IMAGE_LOCATION = "/images/";
-
-// font
-var fontSize = 40;
-var lineSpacing = 40;
-
-// selected font
-var selectedFontColour = "#86fb75";
-var selectedOpacity = 1;
-
-// unselected font
-var unselectedOpacity = 0.8;
-var unselectedFontColour = "#ffffff";
-
-// fontShadow
-var shadowOffsetX = 5;
-var shadowOffsetY = 5;
-var shadowBlur = 7;
-var shadowColour = "#000000";
-
 var parameterValues = {};
 var parameterSnapshots = {
 	"snapshots" : []
@@ -140,6 +120,21 @@ var parameterInitialiser = {
 		"label" : "Selected Font Options",
 		"id" : "selectedFontOptions",
 		"parameters" : [ {
+			"label" : "Font Family",
+			"name" : "fontFamily",
+			"type" : "font",
+			"defaultValue" : "Comicate",
+			"action" : "input"
+		},{
+			"label" : "Opacity",
+			"name" : "selectedOpacity",
+			"type" : "range",
+			"min" : 0,
+			"max" : 1,
+			"step" : 0.1,
+			"defaultValue" : 0.9,
+			"action" : "input"
+		}, {
 			"label" : "Font Colour",
 			"name" : "selectedFontColour",
 			"type" : "color",
@@ -260,7 +255,16 @@ var parameterInitialiser = {
 			"step" : 1,
 			"defaultValue" : 7,
 			"action" : "input"
-		}, ]
+		}, {
+			"label" : "Opacity",
+			"name" : "unselectedOpacity",
+			"type" : "range",
+			"min" : 0,
+			"max" : 1,
+			"step" : 0.1,
+			"defaultValue" : 0.9,
+			"action" : "input"
+		}]
 	}, {
 		"label" : "Text Position",
 		"id" : "textPosition",
@@ -360,7 +364,6 @@ var parameterInitialiser = {
 
 function initialiseParameters() {
 	var groups = parameterInitialiser.groups;
-	parameterValues.fontFamily = fontFamily;
 
 	var html = "";
 
@@ -498,9 +501,7 @@ var parameterSnapshotId = 0;
 
 function loadParameterSnapshot(parameterSnapshot) {
 	for ( var key in parameterSnapshot.parameterValues) {
-		// console.log(key);
 		if (key == "backgroundImage") {
-			// $('#' + key).val(parameterSnapshot.parameterValues[key]);
 			setBackgroundImage('./images/'
 					+ parameterSnapshot.parameterValues[key], 800, 600);
 		} else {

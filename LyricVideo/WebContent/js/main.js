@@ -13,17 +13,6 @@ var pageHeight;
 var tempFrame = 1;
 var start = null;
 
-
-
-
-
-
-
-
-
-
-
-
 $(document).ready(function() {
 	console.log("ready!");
 
