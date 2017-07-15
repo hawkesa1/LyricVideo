@@ -1,0 +1,1533 @@
+{
+  "title": "You Learn",
+  "artist": "Alanis Morissette",
+  "album": "Jagged Little Pill",
+  "uniqueId": "c6626f323f0e5e590c74cd99a9fbfafe",
+  "unsynchronisedLyrics": "",
+  "lyricRecorderSynchronisedLyrics": [
+    {
+      "words": [
+        {
+          "word": "Oh,",
+          "wordIndex": 0,
+          "id": "word_0_0",
+          "startTime": 954.0920000000001,
+          "endTime": 1251.739
+        },
+        {
+          "word": "oh,",
+          "wordIndex": 1,
+          "id": "word_0_1",
+          "startTime": 1356.76,
+          "endTime": 2138.9269999999997
+        },
+        {
+          "word": "oh",
+          "wordIndex": 2,
+          "id": "word_0_2",
+          "startTime": 3877.732,
+          "endTime": 5100.825000000001
+        }
+      ],
+      "startTime": 954.0920000000001,
+      "endTime": 5100.825000000001
+    },
+    {
+      "words": [
+        {
+          "word": "I,",
+          "wordIndex": 3,
+          "id": "word_1_0",
+          "startTime": 12383.31,
+          "endTime": 13781.106
+        },
+        {
+          "word": "recommend",
+          "wordIndex": 4,
+          "id": "word_1_1",
+          "startTime": 14117.039,
+          "endTime": 14756.280999999999
+        },
+        {
+          "word": "getting",
+          "wordIndex": 5,
+          "id": "word_1_2",
+          "startTime": 14873.318,
+          "endTime": 15058.475
+        },
+        {
+          "word": "your",
+          "wordIndex": 6,
+          "id": "word_1_3",
+          "startTime": 15188.008,
+          "endTime": 15465.366
+        },
+        {
+          "word": "heart",
+          "wordIndex": 7,
+          "id": "word_1_4",
+          "startTime": 15577.051000000001,
+          "endTime": 15778.475
+        },
+        {
+          "word": "trampled",
+          "wordIndex": 8,
+          "id": "word_1_5",
+          "startTime": 15917.279,
+          "endTime": 16709.299000000003
+        },
+        {
+          "word": "on",
+          "wordIndex": 9,
+          "id": "word_1_6",
+          "startTime": 16805.614999999998,
+          "endTime": 17098.506
+        },
+        {
+          "word": "to",
+          "wordIndex": 10,
+          "id": "word_1_7",
+          "startTime": 17226.949,
+          "endTime": 17397.634000000002
+        },
+        {
+          "word": "anyone,",
+          "wordIndex": 11,
+          "id": "word_1_8",
+          "startTime": 17513.091,
+          "endTime": 18443.361
+        },
+        {
+          "word": "yeah",
+          "wordIndex": 12,
+          "id": "word_1_9",
+          "startTime": 19464.282,
+          "endTime": 20591.903
+        }
+      ],
+      "startTime": 12383.31,
+      "endTime": 20591.903
+    },
+    {
+      "words": [
+        {
+          "word": "I,",
+          "wordIndex": 13,
+          "id": "word_2_0",
+          "startTime": 23699.046,
+          "endTime": 25036.166999999998
+        },
+        {
+          "word": "recommend",
+          "wordIndex": 14,
+          "id": "word_2_1",
+          "startTime": 25444.448,
+          "endTime": 26094.749
+        },
+        {
+          "word": "walking",
+          "wordIndex": 15,
+          "id": "word_2_2",
+          "startTime": 26212.888,
+          "endTime": 26471.016
+        },
+        {
+          "word": "around",
+          "wordIndex": 16,
+          "id": "word_2_3",
+          "startTime": 26593.905,
+          "endTime": 27226.33
+        },
+        {
+          "word": "naked",
+          "wordIndex": 17,
+          "id": "word_2_4",
+          "startTime": 27327.104,
+          "endTime": 27621.35
+        },
+        {
+          "word": "in",
+          "wordIndex": 18,
+          "id": "word_2_5",
+          "startTime": 27745.127,
+          "endTime": 27922.161
+        },
+        {
+          "word": "your",
+          "wordIndex": 19,
+          "id": "word_2_6",
+          "startTime": 28039.062,
+          "endTime": 28322.861
+        },
+        {
+          "word": "living",
+          "wordIndex": 20,
+          "id": "word_2_7",
+          "startTime": 28447.634000000002,
+          "endTime": 28704.414
+        },
+        {
+          "word": "room,",
+          "wordIndex": 21,
+          "id": "word_2_8",
+          "startTime": 28829.836,
+          "endTime": 31272.502
+        },
+        {
+          "word": "yeah",
+          "wordIndex": 22,
+          "id": "word_2_9",
+          "startTime": 33158.186,
+          "endTime": 33928.979
+        }
+      ],
+      "startTime": 23699.046,
+      "endTime": 33928.979
+    },
+    {
+      "words": [
+        {
+          "word": "Swallow",
+          "wordIndex": 23,
+          "id": "word_3_0",
+          "startTime": 35129.018000000004,
+          "endTime": 36421.304
+        },
+        {
+          "word": "it",
+          "wordIndex": 24,
+          "id": "word_3_1",
+          "startTime": 36569.42,
+          "endTime": 36881.115
+        },
+        {
+          "word": "down",
+          "wordIndex": 25,
+          "id": "word_3_2",
+          "startTime": 37025.908,
+          "endTime": 38017.105
+        },
+        {
+          "word": "(what",
+          "wordIndex": 26,
+          "id": "word_3_3",
+          "startTime": 38252.319,
+          "endTime": 38441.569
+        },
+        {
+          "word": "a",
+          "wordIndex": 27,
+          "id": "word_3_4",
+          "startTime": 38597.933,
+          "endTime": 38728.742
+        },
+        {
+          "word": "jagged",
+          "wordIndex": 28,
+          "id": "word_3_5",
+          "startTime": 38832.284999999996,
+          "endTime": 39104.402
+        },
+        {
+          "word": "little",
+          "wordIndex": 29,
+          "id": "word_3_6",
+          "startTime": 39221.886,
+          "endTime": 39466.479
+        },
+        {
+          "word": "pill)",
+          "wordIndex": 30,
+          "id": "word_3_7",
+          "startTime": 39617.552,
+          "endTime": 40570.799
+        }
+      ],
+      "startTime": 35129.018000000004,
+      "endTime": 40570.799
+    },
+    {
+      "words": [
+        {
+          "word": "It",
+          "wordIndex": 31,
+          "id": "word_4_0",
+          "startTime": 40755.865,
+          "endTime": 41049.776
+        },
+        {
+          "word": "feels",
+          "wordIndex": 32,
+          "id": "word_4_1",
+          "startTime": 41186.509,
+          "endTime": 41988.138
+        },
+        {
+          "word": "so",
+          "wordIndex": 33,
+          "id": "word_4_2",
+          "startTime": 42172.99,
+          "endTime": 42457.687
+        },
+        {
+          "word": "good",
+          "wordIndex": 34,
+          "id": "word_4_3",
+          "startTime": 42594.669,
+          "endTime": 43894.604999999996
+        },
+        {
+          "word": "(swimming",
+          "wordIndex": 35,
+          "id": "word_4_4",
+          "startTime": 44219.304000000004,
+          "endTime": 44623.623999999996
+        },
+        {
+          "word": "in",
+          "wordIndex": 36,
+          "id": "word_4_5",
+          "startTime": 44747.042,
+          "endTime": 44907.392
+        },
+        {
+          "word": "your",
+          "wordIndex": 37,
+          "id": "word_4_6",
+          "startTime": 45040.19,
+          "endTime": 45206.043
+        },
+        {
+          "word": "stomach)",
+          "wordIndex": 38,
+          "id": "word_4_7",
+          "startTime": 45322.143,
+          "endTime": 46354.14
+        }
+      ],
+      "startTime": 40755.865,
+      "endTime": 46354.14
+    },
+    {
+      "words": [
+        {
+          "word": "Wait",
+          "wordIndex": 39,
+          "id": "word_5_0",
+          "startTime": 46503.369,
+          "endTime": 47438.367
+        },
+        {
+          "word": "until",
+          "wordIndex": 40,
+          "id": "word_5_1",
+          "startTime": 47560.775,
+          "endTime": 48264.89
+        },
+        {
+          "word": "the",
+          "wordIndex": 41,
+          "id": "word_5_2",
+          "startTime": 48427.385,
+          "endTime": 48596.57
+        },
+        {
+          "word": "dust",
+          "wordIndex": 42,
+          "id": "word_5_3",
+          "startTime": 48717.412000000004,
+          "endTime": 48974.854
+        },
+        {
+          "word": "settles",
+          "wordIndex": 43,
+          "id": "word_5_4",
+          "startTime": 49088.009999999995,
+          "endTime": 52210.791
+        }
+      ],
+      "startTime": 46503.369,
+      "endTime": 52210.791
+    },
+    {
+      "words": [
+        {
+          "word": "You",
+          "wordIndex": 44,
+          "id": "word_6_0",
+          "startTime": 52310.78200000001,
+          "endTime": 52535.917
+        },
+        {
+          "word": "live",
+          "wordIndex": 45,
+          "id": "word_6_1",
+          "startTime": 52641.273,
+          "endTime": 53329.398
+        },
+        {
+          "word": "you",
+          "wordIndex": 46,
+          "id": "word_6_2",
+          "startTime": 53585.534,
+          "endTime": 53943.686
+        },
+        {
+          "word": "learn,",
+          "wordIndex": 47,
+          "id": "word_6_3",
+          "startTime": 54047.209,
+          "endTime": 54811.632000000005
+        },
+        {
+          "word": "you",
+          "wordIndex": 48,
+          "id": "word_6_4",
+          "startTime": 55084.672,
+          "endTime": 55377.761999999995
+        },
+        {
+          "word": "love",
+          "wordIndex": 49,
+          "id": "word_6_5",
+          "startTime": 55513.859,
+          "endTime": 56268.419
+        },
+        {
+          "word": "you",
+          "wordIndex": 50,
+          "id": "word_6_6",
+          "startTime": 56534.287,
+          "endTime": 56837.820999999996
+        },
+        {
+          "word": "learn",
+          "wordIndex": 51,
+          "id": "word_6_7",
+          "startTime": 56964.536,
+          "endTime": 57743.094999999994
+        }
+      ],
+      "startTime": 52310.78200000001,
+      "endTime": 57743.094999999994
+    },
+    {
+      "words": [
+        {
+          "word": "You",
+          "wordIndex": 52,
+          "id": "word_7_0"
+        },
+        {
+          "word": "cry",
+          "wordIndex": 53,
+          "id": "word_7_1"
+        },
+        {
+          "word": "you",
+          "wordIndex": 54,
+          "id": "word_7_2"
+        },
+        {
+          "word": "learn,",
+          "wordIndex": 55,
+          "id": "word_7_3"
+        },
+        {
+          "word": "you",
+          "wordIndex": 56,
+          "id": "word_7_4"
+        },
+        {
+          "word": "lose",
+          "wordIndex": 57,
+          "id": "word_7_5"
+        },
+        {
+          "word": "you",
+          "wordIndex": 58,
+          "id": "word_7_6"
+        },
+        {
+          "word": "learn",
+          "wordIndex": 59,
+          "id": "word_7_7"
+        }
+      ]
+    },
+    {
+      "words": [
+        {
+          "word": "You",
+          "wordIndex": 60,
+          "id": "word_8_0"
+        },
+        {
+          "word": "bleed",
+          "wordIndex": 61,
+          "id": "word_8_1"
+        },
+        {
+          "word": "you",
+          "wordIndex": 62,
+          "id": "word_8_2"
+        },
+        {
+          "word": "learn,",
+          "wordIndex": 63,
+          "id": "word_8_3"
+        },
+        {
+          "word": "you",
+          "wordIndex": 64,
+          "id": "word_8_4"
+        },
+        {
+          "word": "scream",
+          "wordIndex": 65,
+          "id": "word_8_5"
+        },
+        {
+          "word": "you",
+          "wordIndex": 66,
+          "id": "word_8_6"
+        },
+        {
+          "word": "learn",
+          "wordIndex": 67,
+          "id": "word_8_7"
+        }
+      ]
+    },
+    {
+      "words": [
+        {
+          "word": "I,",
+          "wordIndex": 68,
+          "id": "word_9_0"
+        },
+        {
+          "word": "recommend",
+          "wordIndex": 69,
+          "id": "word_9_1"
+        },
+        {
+          "word": "biting",
+          "wordIndex": 70,
+          "id": "word_9_2"
+        },
+        {
+          "word": "off",
+          "wordIndex": 71,
+          "id": "word_9_3"
+        },
+        {
+          "word": "more",
+          "wordIndex": 72,
+          "id": "word_9_4"
+        },
+        {
+          "word": "than",
+          "wordIndex": 73,
+          "id": "word_9_5"
+        },
+        {
+          "word": "you",
+          "wordIndex": 74,
+          "id": "word_9_6"
+        },
+        {
+          "word": "can",
+          "wordIndex": 75,
+          "id": "word_9_7"
+        },
+        {
+          "word": "chew",
+          "wordIndex": 76,
+          "id": "word_9_8"
+        },
+        {
+          "word": "to",
+          "wordIndex": 77,
+          "id": "word_9_9"
+        },
+        {
+          "word": "anyone",
+          "wordIndex": 78,
+          "id": "word_9_10"
+        }
+      ]
+    },
+    {
+      "words": [
+        {
+          "word": "I",
+          "wordIndex": 79,
+          "id": "word_10_0"
+        },
+        {
+          "word": "certainly",
+          "wordIndex": 80,
+          "id": "word_10_1"
+        },
+        {
+          "word": "do",
+          "wordIndex": 81,
+          "id": "word_10_2"
+        }
+      ]
+    },
+    {
+      "words": [
+        {
+          "word": "I,",
+          "wordIndex": 82,
+          "id": "word_11_0"
+        },
+        {
+          "word": "recommend",
+          "wordIndex": 83,
+          "id": "word_11_1"
+        },
+        {
+          "word": "sticking",
+          "wordIndex": 84,
+          "id": "word_11_2"
+        },
+        {
+          "word": "your",
+          "wordIndex": 85,
+          "id": "word_11_3"
+        },
+        {
+          "word": "foot",
+          "wordIndex": 86,
+          "id": "word_11_4"
+        },
+        {
+          "word": "in",
+          "wordIndex": 87,
+          "id": "word_11_5"
+        },
+        {
+          "word": "your",
+          "wordIndex": 88,
+          "id": "word_11_6"
+        },
+        {
+          "word": "mouth",
+          "wordIndex": 89,
+          "id": "word_11_7"
+        },
+        {
+          "word": "at",
+          "wordIndex": 90,
+          "id": "word_11_8"
+        },
+        {
+          "word": "any",
+          "wordIndex": 91,
+          "id": "word_11_9"
+        },
+        {
+          "word": "time",
+          "wordIndex": 92,
+          "id": "word_11_10"
+        }
+      ]
+    },
+    {
+      "words": [
+        {
+          "word": "Feel",
+          "wordIndex": 93,
+          "id": "word_12_0"
+        },
+        {
+          "word": "free",
+          "wordIndex": 94,
+          "id": "word_12_1"
+        }
+      ]
+    },
+    {
+      "words": [
+        {
+          "word": "Throw",
+          "wordIndex": 95,
+          "id": "word_13_0"
+        },
+        {
+          "word": "it",
+          "wordIndex": 96,
+          "id": "word_13_1"
+        },
+        {
+          "word": "down",
+          "wordIndex": 97,
+          "id": "word_13_2"
+        },
+        {
+          "word": "(the",
+          "wordIndex": 98,
+          "id": "word_13_3"
+        },
+        {
+          "word": "caution",
+          "wordIndex": 99,
+          "id": "word_13_4"
+        },
+        {
+          "word": "blocks",
+          "wordIndex": 100,
+          "id": "word_13_5"
+        },
+        {
+          "word": "you",
+          "wordIndex": 101,
+          "id": "word_13_6"
+        },
+        {
+          "word": "from",
+          "wordIndex": 102,
+          "id": "word_13_7"
+        },
+        {
+          "word": "the",
+          "wordIndex": 103,
+          "id": "word_13_8"
+        },
+        {
+          "word": "wind)",
+          "wordIndex": 104,
+          "id": "word_13_9"
+        }
+      ]
+    },
+    {
+      "words": [
+        {
+          "word": "Hold",
+          "wordIndex": 105,
+          "id": "word_14_0"
+        },
+        {
+          "word": "it",
+          "wordIndex": 106,
+          "id": "word_14_1"
+        },
+        {
+          "word": "up",
+          "wordIndex": 107,
+          "id": "word_14_2"
+        },
+        {
+          "word": "(to",
+          "wordIndex": 108,
+          "id": "word_14_3"
+        },
+        {
+          "word": "the",
+          "wordIndex": 109,
+          "id": "word_14_4"
+        },
+        {
+          "word": "rays)",
+          "wordIndex": 110,
+          "id": "word_14_5"
+        }
+      ]
+    },
+    {
+      "words": [
+        {
+          "word": "You",
+          "wordIndex": 111,
+          "id": "word_15_0"
+        },
+        {
+          "word": "wait",
+          "wordIndex": 112,
+          "id": "word_15_1"
+        },
+        {
+          "word": "and",
+          "wordIndex": 113,
+          "id": "word_15_2"
+        },
+        {
+          "word": "see",
+          "wordIndex": 114,
+          "id": "word_15_3"
+        },
+        {
+          "word": "when",
+          "wordIndex": 115,
+          "id": "word_15_4"
+        },
+        {
+          "word": "the",
+          "wordIndex": 116,
+          "id": "word_15_5"
+        },
+        {
+          "word": "smoke",
+          "wordIndex": 117,
+          "id": "word_15_6"
+        },
+        {
+          "word": "clears",
+          "wordIndex": 118,
+          "id": "word_15_7"
+        }
+      ]
+    },
+    {
+      "words": [
+        {
+          "word": "You",
+          "wordIndex": 119,
+          "id": "word_16_0"
+        },
+        {
+          "word": "live",
+          "wordIndex": 120,
+          "id": "word_16_1"
+        },
+        {
+          "word": "you",
+          "wordIndex": 121,
+          "id": "word_16_2"
+        },
+        {
+          "word": "learn,",
+          "wordIndex": 122,
+          "id": "word_16_3"
+        },
+        {
+          "word": "you",
+          "wordIndex": 123,
+          "id": "word_16_4"
+        },
+        {
+          "word": "love",
+          "wordIndex": 124,
+          "id": "word_16_5"
+        },
+        {
+          "word": "you",
+          "wordIndex": 125,
+          "id": "word_16_6"
+        },
+        {
+          "word": "learn",
+          "wordIndex": 126,
+          "id": "word_16_7"
+        }
+      ]
+    },
+    {
+      "words": [
+        {
+          "word": "You",
+          "wordIndex": 127,
+          "id": "word_17_0"
+        },
+        {
+          "word": "cry",
+          "wordIndex": 128,
+          "id": "word_17_1"
+        },
+        {
+          "word": "you",
+          "wordIndex": 129,
+          "id": "word_17_2"
+        },
+        {
+          "word": "learn,",
+          "wordIndex": 130,
+          "id": "word_17_3"
+        },
+        {
+          "word": "you",
+          "wordIndex": 131,
+          "id": "word_17_4"
+        },
+        {
+          "word": "lose",
+          "wordIndex": 132,
+          "id": "word_17_5"
+        },
+        {
+          "word": "you",
+          "wordIndex": 133,
+          "id": "word_17_6"
+        },
+        {
+          "word": "learn",
+          "wordIndex": 134,
+          "id": "word_17_7"
+        }
+      ]
+    },
+    {
+      "words": [
+        {
+          "word": "You",
+          "wordIndex": 135,
+          "id": "word_18_0"
+        },
+        {
+          "word": "bleed",
+          "wordIndex": 136,
+          "id": "word_18_1"
+        },
+        {
+          "word": "you",
+          "wordIndex": 137,
+          "id": "word_18_2"
+        },
+        {
+          "word": "learn,",
+          "wordIndex": 138,
+          "id": "word_18_3"
+        },
+        {
+          "word": "you",
+          "wordIndex": 139,
+          "id": "word_18_4"
+        },
+        {
+          "word": "scream",
+          "wordIndex": 140,
+          "id": "word_18_5"
+        },
+        {
+          "word": "you",
+          "wordIndex": 141,
+          "id": "word_18_6"
+        },
+        {
+          "word": "learn",
+          "wordIndex": 142,
+          "id": "word_18_7"
+        }
+      ]
+    },
+    {
+      "words": [
+        {
+          "word": "I,",
+          "wordIndex": 143,
+          "id": "word_19_0"
+        },
+        {
+          "word": "I,",
+          "wordIndex": 144,
+          "id": "word_19_1"
+        },
+        {
+          "word": "oh,",
+          "wordIndex": 145,
+          "id": "word_19_2"
+        },
+        {
+          "word": "oh",
+          "wordIndex": 146,
+          "id": "word_19_3"
+        }
+      ]
+    },
+    {
+      "words": [
+        {
+          "word": "Wear",
+          "wordIndex": 147,
+          "id": "word_20_0"
+        },
+        {
+          "word": "it",
+          "wordIndex": 148,
+          "id": "word_20_1"
+        },
+        {
+          "word": "out",
+          "wordIndex": 149,
+          "id": "word_20_2"
+        },
+        {
+          "word": "(the",
+          "wordIndex": 150,
+          "id": "word_20_3"
+        },
+        {
+          "word": "way",
+          "wordIndex": 151,
+          "id": "word_20_4"
+        },
+        {
+          "word": "a",
+          "wordIndex": 152,
+          "id": "word_20_5"
+        },
+        {
+          "word": "three-year-old",
+          "wordIndex": 153,
+          "id": "word_20_6"
+        },
+        {
+          "word": "would",
+          "wordIndex": 154,
+          "id": "word_20_7"
+        },
+        {
+          "word": "do)",
+          "wordIndex": 155,
+          "id": "word_20_8"
+        }
+      ]
+    },
+    {
+      "words": [
+        {
+          "word": "Melt",
+          "wordIndex": 156,
+          "id": "word_21_0"
+        },
+        {
+          "word": "it",
+          "wordIndex": 157,
+          "id": "word_21_1"
+        },
+        {
+          "word": "down",
+          "wordIndex": 158,
+          "id": "word_21_2"
+        },
+        {
+          "word": "(you're",
+          "wordIndex": 159,
+          "id": "word_21_3"
+        },
+        {
+          "word": "gonna",
+          "wordIndex": 160,
+          "id": "word_21_4"
+        },
+        {
+          "word": "have",
+          "wordIndex": 161,
+          "id": "word_21_5"
+        },
+        {
+          "word": "to",
+          "wordIndex": 162,
+          "id": "word_21_6"
+        },
+        {
+          "word": "eventually,",
+          "wordIndex": 163,
+          "id": "word_21_7"
+        },
+        {
+          "word": "anyway)",
+          "wordIndex": 164,
+          "id": "word_21_8"
+        }
+      ]
+    },
+    {
+      "words": [
+        {
+          "word": "The",
+          "wordIndex": 165,
+          "id": "word_22_0"
+        },
+        {
+          "word": "fire",
+          "wordIndex": 166,
+          "id": "word_22_1"
+        },
+        {
+          "word": "trucks",
+          "wordIndex": 167,
+          "id": "word_22_2"
+        },
+        {
+          "word": "are",
+          "wordIndex": 168,
+          "id": "word_22_3"
+        },
+        {
+          "word": "coming",
+          "wordIndex": 169,
+          "id": "word_22_4"
+        },
+        {
+          "word": "up",
+          "wordIndex": 170,
+          "id": "word_22_5"
+        },
+        {
+          "word": "around",
+          "wordIndex": 171,
+          "id": "word_22_6"
+        },
+        {
+          "word": "the",
+          "wordIndex": 172,
+          "id": "word_22_7"
+        },
+        {
+          "word": "bend",
+          "wordIndex": 173,
+          "id": "word_22_8"
+        }
+      ]
+    },
+    {
+      "words": [
+        {
+          "word": "You",
+          "wordIndex": 174,
+          "id": "word_23_0"
+        },
+        {
+          "word": "live",
+          "wordIndex": 175,
+          "id": "word_23_1"
+        },
+        {
+          "word": "you",
+          "wordIndex": 176,
+          "id": "word_23_2"
+        },
+        {
+          "word": "learn,",
+          "wordIndex": 177,
+          "id": "word_23_3"
+        },
+        {
+          "word": "you",
+          "wordIndex": 178,
+          "id": "word_23_4"
+        },
+        {
+          "word": "love",
+          "wordIndex": 179,
+          "id": "word_23_5"
+        },
+        {
+          "word": "you",
+          "wordIndex": 180,
+          "id": "word_23_6"
+        },
+        {
+          "word": "learn",
+          "wordIndex": 181,
+          "id": "word_23_7"
+        }
+      ]
+    },
+    {
+      "words": [
+        {
+          "word": "You",
+          "wordIndex": 182,
+          "id": "word_24_0"
+        },
+        {
+          "word": "cry",
+          "wordIndex": 183,
+          "id": "word_24_1"
+        },
+        {
+          "word": "you",
+          "wordIndex": 184,
+          "id": "word_24_2"
+        },
+        {
+          "word": "learn,",
+          "wordIndex": 185,
+          "id": "word_24_3"
+        },
+        {
+          "word": "you",
+          "wordIndex": 186,
+          "id": "word_24_4"
+        },
+        {
+          "word": "lose",
+          "wordIndex": 187,
+          "id": "word_24_5"
+        },
+        {
+          "word": "you",
+          "wordIndex": 188,
+          "id": "word_24_6"
+        },
+        {
+          "word": "learn",
+          "wordIndex": 189,
+          "id": "word_24_7"
+        }
+      ]
+    },
+    {
+      "words": [
+        {
+          "word": "You",
+          "wordIndex": 190,
+          "id": "word_25_0"
+        },
+        {
+          "word": "bleed",
+          "wordIndex": 191,
+          "id": "word_25_1"
+        },
+        {
+          "word": "you",
+          "wordIndex": 192,
+          "id": "word_25_2"
+        },
+        {
+          "word": "learn,",
+          "wordIndex": 193,
+          "id": "word_25_3"
+        },
+        {
+          "word": "you",
+          "wordIndex": 194,
+          "id": "word_25_4"
+        },
+        {
+          "word": "scream",
+          "wordIndex": 195,
+          "id": "word_25_5"
+        },
+        {
+          "word": "you",
+          "wordIndex": 196,
+          "id": "word_25_6"
+        },
+        {
+          "word": "learn",
+          "wordIndex": 197,
+          "id": "word_25_7"
+        }
+      ]
+    },
+    {
+      "words": [
+        {
+          "word": "You",
+          "wordIndex": 198,
+          "id": "word_26_0"
+        },
+        {
+          "word": "grieve",
+          "wordIndex": 199,
+          "id": "word_26_1"
+        },
+        {
+          "word": "you",
+          "wordIndex": 200,
+          "id": "word_26_2"
+        },
+        {
+          "word": "learn,",
+          "wordIndex": 201,
+          "id": "word_26_3"
+        },
+        {
+          "word": "you",
+          "wordIndex": 202,
+          "id": "word_26_4"
+        },
+        {
+          "word": "choke",
+          "wordIndex": 203,
+          "id": "word_26_5"
+        },
+        {
+          "word": "you",
+          "wordIndex": 204,
+          "id": "word_26_6"
+        },
+        {
+          "word": "learn",
+          "wordIndex": 205,
+          "id": "word_26_7"
+        }
+      ]
+    },
+    {
+      "words": [
+        {
+          "word": "You",
+          "wordIndex": 206,
+          "id": "word_27_0"
+        },
+        {
+          "word": "laugh",
+          "wordIndex": 207,
+          "id": "word_27_1"
+        },
+        {
+          "word": "you",
+          "wordIndex": 208,
+          "id": "word_27_2"
+        },
+        {
+          "word": "learn,",
+          "wordIndex": 209,
+          "id": "word_27_3"
+        },
+        {
+          "word": "you",
+          "wordIndex": 210,
+          "id": "word_27_4"
+        },
+        {
+          "word": "choose",
+          "wordIndex": 211,
+          "id": "word_27_5"
+        },
+        {
+          "word": "you",
+          "wordIndex": 212,
+          "id": "word_27_6"
+        },
+        {
+          "word": "learn",
+          "wordIndex": 213,
+          "id": "word_27_7"
+        }
+      ]
+    },
+    {
+      "words": [
+        {
+          "word": "You",
+          "wordIndex": 214,
+          "id": "word_28_0"
+        },
+        {
+          "word": "pray",
+          "wordIndex": 215,
+          "id": "word_28_1"
+        },
+        {
+          "word": "you",
+          "wordIndex": 216,
+          "id": "word_28_2"
+        },
+        {
+          "word": "learn,",
+          "wordIndex": 217,
+          "id": "word_28_3"
+        },
+        {
+          "word": "you",
+          "wordIndex": 218,
+          "id": "word_28_4"
+        },
+        {
+          "word": "ask",
+          "wordIndex": 219,
+          "id": "word_28_5"
+        },
+        {
+          "word": "you",
+          "wordIndex": 220,
+          "id": "word_28_6"
+        },
+        {
+          "word": "learn",
+          "wordIndex": 221,
+          "id": "word_28_7"
+        }
+      ]
+    },
+    {
+      "words": [
+        {
+          "word": "You",
+          "wordIndex": 222,
+          "id": "word_29_0"
+        },
+        {
+          "word": "live",
+          "wordIndex": 223,
+          "id": "word_29_1"
+        },
+        {
+          "word": "you",
+          "wordIndex": 224,
+          "id": "word_29_2"
+        },
+        {
+          "word": "learn",
+          "wordIndex": 225,
+          "id": "word_29_3"
+        }
+      ]
+    }
+  ],
+  "md5Hash": "c6626f323f0e5e590c74cd99a9fbfafe",
+  "originalFileName": "Alanis Morissette - You Learn.mp3",
+  "allTags": {
+    "ACOUSTIC": "",
+    "TRACK": "1",
+    "ARTISTS": "",
+    "ORIGINAL_YEAR": "",
+    "TRACK_TOTAL": "",
+    "RECORD_LABEL": "",
+    "MUSICBRAINZ_RELEASEID": "",
+    "GENRE": "Rock",
+    "MOOD_VALENCE": "",
+    "FBPM": "",
+    "MUSICBRAINZ_ARTISTID": "",
+    "ACOUSTID_FINGERPRINT": "",
+    "ALBUM_ARTIST_SORT": "",
+    "TIMBRE": "",
+    "URL_DISCOGS_RELEASE_SITE": "",
+    "MEDIA": "",
+    "BARCODE": "",
+    "MUSICBRAINZ_RELEASE_TYPE": "",
+    "AMAZON_ID": "",
+    "MUSICBRAINZ_RELEASE_TRACK_ID": "",
+    "CONDUCTOR": "",
+    "MUSICBRAINZ_TRACK_ID": "",
+    "URL_LYRICS_SITE": "",
+    "ALBUM_SORT": "",
+    "URL_WIKIPEDIA_RELEASE_SITE": "",
+    "ARTIST": "Alanis Morissette",
+    "ORCHESTRA": "",
+    "ISRC": "",
+    "ARTIST_SORT": "",
+    "COMMENT": "",
+    "WORK": "",
+    "MUSICBRAINZ_RELEASE_GROUP_ID": "",
+    "PERFORMER": "",
+    "ORIGINAL_ALBUM": "",
+    "RATING": "",
+    "MOOD_AROUSAL": "",
+    "MUSICBRAINZ_DISC_ID": "",
+    "SCRIPT": "",
+    "MUSICBRAINZ_ORIGINAL_RELEASE_ID": "",
+    "TONALITY": "",
+    "PRODUCER": "",
+    "GROUPING": "",
+    "IS_COMPILATION": "",
+    "KEY": "",
+    "MUSICIP_ID": "",
+    "MOOD_DANCEABILITY": "",
+    "URL_OFFICIAL_RELEASE_SITE": "",
+    "MUSICBRAINZ_WORK_ID": "",
+    "LYRICIST": "",
+    "URL_WIKIPEDIA_ARTIST_SITE": "",
+    "LANGUAGE": "",
+    "CATALOG_NO": "",
+    "COUNTRY": "",
+    "LYRICRECORDER.COM": "",
+    "ORIGINAL_ARTIST": "",
+    "TEMPO": "",
+    "MOOD_RELAXED": "",
+    "MUSICBRAINZ_RELEASE_STATUS": "",
+    "DISC_SUBTITLE": "",
+    "DJMIXER": "",
+    "DISC_NO": "",
+    "YEAR": "1995",
+    "PART": "",
+    "MUSICBRAINZ_RELEASE_COUNTRY": "",
+    "COMPOSER": "",
+    "MOOD_HAPPY": "",
+    "MUSICBRAINZ_RELEASEARTISTID": "",
+    "TITLE_SORT": "",
+    "URL_DISCOGS_ARTIST_SITE": "",
+    "MIXER": "",
+    "COMPOSER_SORT": "",
+    "QUALITY": "",
+    "ENGINEER": "",
+    "ALBUM": "Jagged Little Pill",
+    "LYRICS": "",
+    "MOOD_PARTY": "",
+    "ALBUM_ARTIST": "",
+    "ACOUSTID_ID": "",
+    "ARRANGER": "",
+    "BPM": "",
+    "MOOD_AGGRESSIVE": "",
+    "ELECTRONIC": "",
+    "COVER_ART": "",
+    "SUBTITLE": "",
+    "TAGS": "",
+    "DISC_TOTAL": "",
+    "MOOD_SAD": "",
+    "MOOD": "",
+    "ENCODER": "",
+    "REMIXER": "",
+    "ORIGINAL_LYRICIST": "",
+    "OCCASION": "",
+    "CUSTOM1": "",
+    "CUSTOM2": "",
+    "CUSTOM3": "",
+    "CUSTOM4": "",
+    "CUSTOM5": "",
+    "INSTRUMENTAL": "",
+    "URL_OFFICIAL_ARTIST_SITE": "",
+    "TITLE": "You Learn"
+  },
+  "videoSnapshot": {
+    "snapshots": [
+      {
+        "id": 0,
+        "parameterValues": {
+          "backgroundImage": "1500133069251.jpg",
+          "backgroundRepeat": "no-repeat",
+          "backgroundImageWidth": "827",
+          "backgroundImageHeight": "635",
+          "backgroundImagePositionX": "0",
+          "backgroundImagePositionY": "0",
+          "backgroundContainerWidth": "849",
+          "backgroundContainerHeight": "709",
+          "backgroundContainerPositionX": "-21",
+          "backgroundContainerPositionY": "-21",
+          "backgroundImageRotation": "0",
+          "fontFamily": "Ravie Regular",
+          "selectedEasingFunction": "easeOutExpo",
+          "selectedEasingDuration": 500,
+          "selectedOpacity": "0.9",
+          "selectedFontColour": "#8065fc",
+          "lineHeight": "67",
+          "characterSpacing": "30",
+          "fontSize": "78",
+          "fontSizeIncrease": "25",
+          "selectedShadowShow": true,
+          "selectedShadowColour": "#000000",
+          "selectedShadowOffsetX": "5",
+          "selectedShadowOffsetY": "5",
+          "selectedShadowBlur": "10",
+          "unselectedFontColour": "#ffffff",
+          "unselectedShadowShow": true,
+          "unselectedShadowColour": "#000000",
+          "unselectedShadowOffsetX": "5",
+          "unselectedShadowOffsetY": "5",
+          "unselectedShadowBlur": "7",
+          "unselectedOpacity": "0.9",
+          "backgroundColour": "#ffffff",
+          "textX": "63",
+          "textY": "106",
+          "textWidth": "449",
+          "textHeight": "422",
+          "backgroundShadowShow": true,
+          "backgroundShadowColour": "#f8f8ff",
+          "backgroundShadowOffsetX": "5",
+          "backgroundOffsetY": "5",
+          "backgroundShadowBlur": "7",
+          "backgroundOpacity": "0"
+        }
+      }
+    ]
+  }
+}

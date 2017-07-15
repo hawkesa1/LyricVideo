@@ -2,13 +2,15 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>Insert title here</title>
+<title>Lyric Video</title>
 
 <script src="./js/jquery/jquery-3.1.0.min.js"></script>
-<script src="./js/animation2.js"></script>
+<script src="./js/video/easing.js"></script>
+<script src="./js/video/animation2.js"></script>
 <script src="./js/main.js"></script>
-<script src="./js/testInitiation.js"></script>
-<script src="./js/parameters.js"></script>
+<script src="./js/video/testInitiation.js"></script>
+<script src="./js/video/parameters1.js"></script>
+
 <link rel="stylesheet" href="css/page.css" media="screen" />
 <link rel="stylesheet" href="css/fonts.css" media="screen" />
 
@@ -17,36 +19,47 @@
 
 </head>
 <body>
+
+	<p style="font-family:Ravie Regular; position:absolute; top:700px" >Test</p>
 	<audio src="./mp3/hardest.mp3" id="audio">
 	</audio>
 	<div id="backgroundImageContainerContainer">
 		<div id="backgroundImageContainer"></div>
 	</div>
 
-	
+
 	<canvas id="canvas"></canvas>
 	<div id="controls">
-		<a href="#" id="playPauseButton">Play</a>
-
-		<div>
-			Font: <select id="fontSelect">
-				<option style="font-size: 20px; font-family: 'Comic Sans MS'"
-					value="Comic Sans MS">Comic Sans MS</option>
-				<option style="font-size: 20px; font-family: Arial" value="Arial">Arial</option>
-				<option style="font-size: 20px; font-family: 'XXon XXoff'"
-					value="XXon XXoff">XXon XXoff</option>
-				<option style="font-size: 20px; font-family: 'Comicate'"
-					value="Comicate" selected>Comicate</option>
-				<option style="font-size: 20px; font-family: 'C rial'"
-					value="C rial" selected>C rial</option>
-			</select>
-		</div>
-		<input id="frameRange" type="range" min=0 max=10000 value=2000></input>
-		<input id="frameValue" type="text" value="0"></input> <input
+		<a href="#" id="playPauseButton">Play</a> <input id="frameRange"
+			type="range" min=0 max=10000 value=2000></input> <input
+			id="frameValue" type="text" value="0"></input> <input
 			id="printParameters" type="button" value="Print Parameters"></input>
 		<input id="recordParameters" type="button" value="Record Parameters"></input>
 		<input id="applyParameters" type="button" value="Apply Parameters"></input>
 		<input id="loadParameters" type="button" value="Load Parameters"></input>
 	</div>
 </body>
+
+<script>
+	canvas = document.getElementById('canvas');
+	ctx = canvas.getContext('2d');
+
+	frameNumber = QueryString.frameNumber;
+	fps = QueryString.fps;
+	pageWidth = QueryString.pageWidth;
+	pageHeight = QueryString.pageHeight;
+
+	// Display it on the page
+	$("#frameRange").val(frameNumber);
+	$("#frameValue").val(frameNumber);
+
+	canvas.width = pageWidth;
+	canvas.height = pageHeight;
+	console.log("Logging framenumber: " + QueryString.frameNumber);
+	// http://localhost:8080/LyricVideo/test1.html?frameNumber=200&fps=60&pageWidth=800&pageHeight=600
+	addEventsToFrameInputs();
+	loadFonts();
+
+	//alex();
+</script>
 </html>

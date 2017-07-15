@@ -14,37 +14,7 @@ var tempFrame = 1;
 var start = null;
 
 $(document).ready(function() {
-	console.log("ready!");
-
-	// Parse the JSON lyrics in to objects
-	lyricsObject = JSON.parse(HARD_CODED_LYRICS);
-
-	// Get reference to the canvas and context
-	canvas = document.getElementById('canvas');
-	ctx = canvas.getContext('2d');
-
-	// Get parameters passed in from the URL
-	frameNumber = QueryString.frameNumber;
-	fps = QueryString.fps;
-	pageWidth = QueryString.pageWidth;
-	pageHeight = QueryString.pageHeight;
-
-	// Display it on the page
-	$("#frameRange").val(frameNumber);
-	$("#frameValue").val(frameNumber);
-
-	canvas.width = pageWidth;
-	canvas.height = pageHeight;
-	console.log("Logging framenumber: " + QueryString.frameNumber);
-
-	// http://localhost:8080/LyricVideo/test1.html?frameNumber=200&fps=60&pageWidth=800&pageHeight=600
 	
-
-	addEventsToFrameInputs();
-	loadFonts();
-
-	drawIt1(ctx, (frameNumber / fps) * 1000, lyricsObject);
-
 });
 
 function alex() {
