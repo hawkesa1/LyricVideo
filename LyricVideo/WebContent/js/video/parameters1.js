@@ -1,4 +1,4 @@
-var SAMPLE_FILE="resources/videoScripts/c6626f323f0e5e590c74cd99a9fbfafe.json";
+var SAMPLE_FILE = "resources/videoScripts/4a2812a012e7dfc06e47e355a1c758b8.json";
 var BACKGROUND_IMAGE_LOCATION = "/images/";
 var parameterValues = {};
 var parameterSnapshots = {
@@ -6,7 +6,91 @@ var parameterSnapshots = {
 };
 
 var parameterInitialiser = {
-	"groups" : [ {
+	"groups" : [
+
+	{
+		"label" : "Graduated Select",
+		"id" : "graduatedSelect",
+		"parameters" : [ {
+			"label" : "Graduated Word Type",
+			"name" : "graduatedWordType",
+			"type" : "select",
+			"options" : {
+				"off" : "off",
+				"horizontal" : "horizontal",
+				"vertical" : "vertical"
+			},
+			"action" : "input"
+		}, {
+			"label" : "Graduated Word Threshold",
+			"name" : "graduatedWordThreshold",
+			"type" : "range",
+			"min" : 0,
+			"max" : 2000,
+			"step" : 1,
+			"defaultValue" : 200,
+			"action" : "input"
+
+		}, {
+			"label" : "Easing Function",
+			"name" : "graduatedWordEasingFunction",
+			"type" : "select",
+			"defaultValue" : "easeOutExpo",
+			"options" : {
+				"easeOutQuad" : "easeOutQuad",
+				"easeInQuad" : "easeInQuad",
+				"easeOutQuad" : "easeOutQuad",
+				"easeInOutQuad" : "easeInOutQuad",
+				"easeInCubic" : "easeInCubic",
+				"easeOutCubic" : "easeOutCubic",
+				"easeInOutCubic" : "easeInOutCubic",
+				"easeInQuart" : "easeInQuart",
+				"easeOutQuart" : "easeOutQuart",
+				"easeInOutQuart" : "easeInOutQuart",
+				"easeInQuint" : "easeInQuint",
+				"easeOutQuint" : "easeOutQuint",
+				"easeInOutQuint" : "easeInOutQuint",
+				"easeInSine" : "easeInSine",
+				"easeOutSine" : "easeOutSine",
+				"easeInOutSine" : "easeInOutSine",
+				"easeInExpo" : "easeInExpo",
+				"easeOutExpo" : "easeOutExpo",
+				"easeInOutExpo" : "easeInOutExpo",
+				"easeInCirc" : "easeInCirc",
+				"easeOutCirc" : "easeOutCirc",
+				"easeInOutCirc" : "easeInOutCirc",
+				"easeInElastic" : "easeInElastic",
+				"easeOutElastic" : "easeOutElastic",
+				"easeInOutElastic" : "easeInOutElastic",
+				"easeInBack" : "easeInBack",
+				"easeOutBack" : "easeOutBack",
+				"easeInOutBack" : "easeInOutBack",
+				"easeInBounce" : "easeInBounce",
+				"easeOutBounce" : "easeOutBounce",
+				"easeInOutBounce" : "easeInOutBounce"
+			},
+			"action" : "input"
+		}, {
+			"label" : "Opacity",
+			"name" : "graduatedWordOpacity",
+			"type" : "range",
+			"min" : 0,
+			"max" : 1,
+			"step" : 0.1,
+			"defaultValue" : 0.9,
+			"action" : "input"
+		}, {
+			"label" : "Font Colour",
+			"name" : "graduatedWordColour",
+			"type" : "color",
+			"defaultValue" : "#000000",
+			"action" : "input"
+		}
+
+		]
+	},
+
+	{
 		"label" : "Background",
 		"id" : "background",
 		"parameters" : [ {
@@ -14,7 +98,7 @@ var parameterInitialiser = {
 			"name" : "backgroundImage",
 			"type" : "file",
 			"defaultValue" : "",
-			"action" : "change"
+			"action" : "input"
 		}, {
 			"label" : "Repeat",
 			"name" : "backgroundRepeat",
@@ -125,8 +209,70 @@ var parameterInitialiser = {
 			"name" : "fontFamily",
 			"type" : "font",
 			"defaultValue" : "Comicate",
+			"action" : "input",
+			"options" : {
+				"Comicate" : "Comicate",
+				"Arial" : "Arial",
+				"XXon XXoff" : "XXon XXoff",
+				"C rial" : "C rial",
+				"Wishing Well" : "Wishing Well",
+				"80 Decibels" : "80 Decibels",
+				"Gigi" : "Gigi",
+				"Dancing in the Rainbow" : "Dancing in the Rainbow",
+				"Millennial Solstice" : "Millennial Solstice",
+				"Old English Text MT" : "Old English Text MT",
+				"Ravie Regular" : "Ravie Regular",
+				"Script MT" : "Script MT"
+			},
+		}, {
+			"label" : "Easing Function",
+			"name" : "selectedEasingFunction",
+			"type" : "select",
+			"defaultValue" : "easeOutExpo",
+			"options" : {
+				"easeOutQuad" : "easeOutQuad",
+				"easeInQuad" : "easeInQuad",
+				"easeOutQuad" : "easeOutQuad",
+				"easeInOutQuad" : "easeInOutQuad",
+				"easeInCubic" : "easeInCubic",
+				"easeOutCubic" : "easeOutCubic",
+				"easeInOutCubic" : "easeInOutCubic",
+				"easeInQuart" : "easeInQuart",
+				"easeOutQuart" : "easeOutQuart",
+				"easeInOutQuart" : "easeInOutQuart",
+				"easeInQuint" : "easeInQuint",
+				"easeOutQuint" : "easeOutQuint",
+				"easeInOutQuint" : "easeInOutQuint",
+				"easeInSine" : "easeInSine",
+				"easeOutSine" : "easeOutSine",
+				"easeInOutSine" : "easeInOutSine",
+				"easeInExpo" : "easeInExpo",
+				"easeOutExpo" : "easeOutExpo",
+				"easeInOutExpo" : "easeInOutExpo",
+				"easeInCirc" : "easeInCirc",
+				"easeOutCirc" : "easeOutCirc",
+				"easeInOutCirc" : "easeInOutCirc",
+				"easeInElastic" : "easeInElastic",
+				"easeOutElastic" : "easeOutElastic",
+				"easeInOutElastic" : "easeInOutElastic",
+				"easeInBack" : "easeInBack",
+				"easeOutBack" : "easeOutBack",
+				"easeInOutBack" : "easeInOutBack",
+				"easeInBounce" : "easeInBounce",
+				"easeOutBounce" : "easeOutBounce",
+				"easeInOutBounce" : "easeInOutBounce"
+			},
 			"action" : "input"
-		},{
+		}, {
+			"label" : "Easing Duration (ms)",
+			"name" : "selectedEasingDuration",
+			"type" : "range",
+			"min" : 0,
+			"max" : 2000,
+			"step" : 1,
+			"defaultValue" : 500,
+			"action" : "input"
+		}, {
 			"label" : "Opacity",
 			"name" : "selectedOpacity",
 			"type" : "range",
@@ -164,9 +310,18 @@ var parameterInitialiser = {
 			"name" : "fontSize",
 			"type" : "range",
 			"min" : 0,
-			"max" : 100,
+			"max" : 400,
 			"step" : 1,
 			"defaultValue" : 40,
+			"action" : "input"
+		}, {
+			"label" : "Font Size Increase",
+			"name" : "fontSizeIncrease",
+			"type" : "range",
+			"min" : 0,
+			"max" : 50,
+			"step" : 1,
+			"defaultValue" : 10,
 			"action" : "input"
 		}, {
 			"label" : "Shadow",
@@ -265,7 +420,7 @@ var parameterInitialiser = {
 			"step" : 0.1,
 			"defaultValue" : 0.9,
 			"action" : "input"
-		}]
+		} ]
 	}, {
 		"label" : "Text Position",
 		"id" : "textPosition",
@@ -365,8 +520,8 @@ var parameterInitialiser = {
 
 function initialiseParameters() {
 	loadParametersFromFile();
-	drawIt1(ctx, (frameNumber / fps) * 1000, lyricsObject);
-	
+	//drawIt1(ctx, (frameNumber / fps) * 1000, lyricsObject);
+
 	var groups = parameterInitialiser.groups;
 
 	var html = "";
@@ -393,7 +548,6 @@ function initialiseParameters() {
 		drawIt1(ctx, (frameNumber / fps) * 1000, lyricsObject);
 	});
 
-	
 }
 
 function createParameterGroup(parameterGroup) {
@@ -504,16 +658,15 @@ function loadParametersFromFile() {
 
 var parameterSnapshotId = 0;
 
-function loadLyricsFromFile(words)
-{
-	lyricsObject=words;
+function loadLyricsFromFile(words) {
+	lyricsObject = words;
 	console.log("Boom");
 	console.log(words.length);
 }
 
 function loadParameterSnapshot(parameterSnapshot) {
-	parameterValues=parameterSnapshot.parameterValues;
-	
+	parameterValues = parameterSnapshot.parameterValues;
+
 	console.log(parameterValues);
 	for ( var key in parameterSnapshot.parameterValues) {
 		if (key == "backgroundImage") {

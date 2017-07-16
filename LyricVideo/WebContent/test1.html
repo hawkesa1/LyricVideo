@@ -20,7 +20,7 @@
 </head>
 <body>
 
-	<p style="font-family:Ravie Regular; position:absolute; top:700px" >Test</p>
+	<p style="font-family: Ravie Regular; position: absolute; top: 700px">Test</p>
 	<audio src="./mp3/hardest.mp3" id="audio">
 	</audio>
 	<div id="backgroundImageContainerContainer">
@@ -29,6 +29,9 @@
 
 
 	<canvas id="canvas"></canvas>
+	<canvas id="word1Canvas" width="800" height="600"></canvas>
+	<canvas id="word2Canvas" width="800" height="600"></canvas>
+
 	<div id="controls">
 		<a href="#" id="playPauseButton">Play</a> <input id="frameRange"
 			type="range" min=0 max=10000 value=2000></input> <input
@@ -41,8 +44,19 @@
 </body>
 
 <script>
+	var word1Canvas;
+	var word1Context;
+	var word2Canvas;
+	var word2Context;
+
 	canvas = document.getElementById('canvas');
 	ctx = canvas.getContext('2d');
+
+	word1Canvas = document.getElementById('word1Canvas');
+	word1Context = word1Canvas.getContext('2d');
+
+	word2Canvas = document.getElementById('word1Canvas');
+	word2Context = word2Canvas.getContext('2d');
 
 	frameNumber = QueryString.frameNumber;
 	fps = QueryString.fps;

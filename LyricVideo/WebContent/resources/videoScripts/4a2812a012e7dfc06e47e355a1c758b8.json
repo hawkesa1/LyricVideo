@@ -1,0 +1,821 @@
+{
+  "title": "Teardrop",
+  "artist": "Newton Faulkner",
+  "album": "Hand Built By Robots",
+  "uniqueId": "4a2812a012e7dfc06e47e355a1c758b8",
+  "unsynchronisedLyrics": "",
+  "lyricRecorderSynchronisedLyrics": [
+    {
+      "words": [
+        {
+          "word": "Love,",
+          "wordIndex": 0,
+          "id": "word_0_0",
+          "startTime": 390.97399999999993,
+          "endTime": 1332.627
+        },
+        {
+          "word": "love",
+          "wordIndex": 1,
+          "id": "word_0_1",
+          "startTime": 1346.636,
+          "endTime": 2130.267
+        },
+        {
+          "word": "is",
+          "wordIndex": 2,
+          "id": "word_0_2",
+          "startTime": 2140.5789999999997,
+          "endTime": 2315.883
+        },
+        {
+          "word": "a",
+          "wordIndex": 3,
+          "id": "word_0_3",
+          "startTime": 2329.7760000000003,
+          "endTime": 2557.4640000000004
+        },
+        {
+          "word": "verb",
+          "wordIndex": 4,
+          "id": "word_0_4",
+          "startTime": 2569.584,
+          "endTime": 3336.569
+        }
+      ],
+      "startTime": 530.9739999999999,
+      "endTime": 3411.569
+    },
+    {
+      "words": [
+        {
+          "word": "Love",
+          "wordIndex": 5,
+          "id": "word_1_0",
+          "startTime": 3681.283,
+          "endTime": 4181.081
+        },
+        {
+          "word": "is",
+          "wordIndex": 6,
+          "id": "word_1_1",
+          "startTime": 4251.473,
+          "endTime": 4565.764999999999
+        },
+        {
+          "word": "a",
+          "wordIndex": 7,
+          "id": "word_1_2",
+          "startTime": 4624.823,
+          "endTime": 5128.872
+        },
+        {
+          "word": "doing",
+          "wordIndex": 8,
+          "id": "word_1_3",
+          "startTime": 5184.3589999999995,
+          "endTime": 6024.454000000001
+        },
+        {
+          "word": "word",
+          "wordIndex": 9,
+          "id": "word_1_4",
+          "startTime": 6075.984,
+          "endTime": 6770.578
+        }
+      ],
+      "startTime": 3681.283,
+      "endTime": 6770.578
+    },
+    {
+      "words": [
+        {
+          "word": "Fearless",
+          "wordIndex": 10,
+          "id": "word_2_0",
+          "startTime": 6892.420999999999,
+          "endTime": 8282.599
+        },
+        {
+          "word": "on",
+          "wordIndex": 11,
+          "id": "word_2_1",
+          "startTime": 8340.108,
+          "endTime": 8643.710000000001
+        },
+        {
+          "word": "my",
+          "wordIndex": 12,
+          "id": "word_2_2",
+          "startTime": 8703.382,
+          "endTime": 9541.39
+        },
+        {
+          "word": "breath",
+          "wordIndex": 13,
+          "id": "word_2_3",
+          "startTime": 10081.225,
+          "endTime": 12791.171999999999
+        }
+      ],
+      "startTime": 6892.420999999999,
+      "endTime": 12791.171999999999
+    },
+    {
+      "words": [
+        {
+          "word": "Gentle",
+          "wordIndex": 14,
+          "id": "word_3_0",
+          "startTime": 13345.669,
+          "endTime": 15000.282000000001
+        },
+        {
+          "word": "impulsion",
+          "wordIndex": 15,
+          "id": "word_3_1",
+          "startTime": 15067.156,
+          "endTime": 16238.853
+        }
+      ],
+      "startTime": 13345.669,
+      "endTime": 16238.853
+    },
+    {
+      "words": [
+        {
+          "word": "Shakes",
+          "wordIndex": 16,
+          "id": "word_4_0",
+          "startTime": 16360.358000000002,
+          "endTime": 16915.737
+        },
+        {
+          "word": "me,",
+          "wordIndex": 17,
+          "id": "word_4_1",
+          "startTime": 16991.202,
+          "endTime": 17149.729
+        },
+        {
+          "word": "makes",
+          "wordIndex": 18,
+          "id": "word_4_2",
+          "startTime": 17209.606,
+          "endTime": 17775.674
+        },
+        {
+          "word": "me",
+          "wordIndex": 19,
+          "id": "word_4_3",
+          "startTime": 17824.226,
+          "endTime": 18246.257
+        },
+        {
+          "word": "lighter",
+          "wordIndex": 20,
+          "id": "word_4_4",
+          "startTime": 18301.667999999998,
+          "endTime": 19655.692
+        }
+      ],
+      "startTime": 16360.358000000002,
+      "endTime": 19655.692
+    },
+    {
+      "words": [
+        {
+          "word": "Fearless",
+          "wordIndex": 21,
+          "id": "word_5_0",
+          "startTime": 19714.958,
+          "endTime": 20989.659
+        },
+        {
+          "word": "on",
+          "wordIndex": 22,
+          "id": "word_5_1",
+          "startTime": 21043.212,
+          "endTime": 21388.013
+        },
+        {
+          "word": "my",
+          "wordIndex": 23,
+          "id": "word_5_2",
+          "startTime": 21469.123,
+          "endTime": 22400.197
+        },
+        {
+          "word": "breath",
+          "wordIndex": 24,
+          "id": "word_5_3",
+          "startTime": 22647.661,
+          "endTime": 25646.44
+        }
+      ],
+      "startTime": 19714.958,
+      "endTime": 25646.44
+    },
+    {
+      "words": [
+        {
+          "word": "Teardrop",
+          "wordIndex": 25,
+          "id": "word_6_0",
+          "startTime": 26032.43,
+          "endTime": 26806.385
+        },
+        {
+          "word": "on",
+          "wordIndex": 26,
+          "id": "word_6_1",
+          "startTime": 26863.43,
+          "endTime": 27192.838
+        },
+        {
+          "word": "a",
+          "wordIndex": 27,
+          "id": "word_6_2",
+          "startTime": 27255.157,
+          "endTime": 27668.552
+        },
+        {
+          "word": "fire",
+          "wordIndex": 28,
+          "id": "word_6_3",
+          "startTime": 27715.686999999998,
+          "endTime": 29078.997
+        }
+      ],
+      "startTime": 26032.43,
+      "endTime": 29078.997
+    },
+    {
+      "words": [
+        {
+          "word": "Fearless",
+          "wordIndex": 29,
+          "id": "word_7_0",
+          "startTime": 29304.938,
+          "endTime": 30535.947
+        },
+        {
+          "word": "on",
+          "wordIndex": 30,
+          "id": "word_7_1",
+          "startTime": 30631.664,
+          "endTime": 31026.38
+        },
+        {
+          "word": "my",
+          "wordIndex": 31,
+          "id": "word_7_2",
+          "startTime": 31077.708000000002,
+          "endTime": 32041.21
+        },
+        {
+          "word": "breath",
+          "wordIndex": 32,
+          "id": "word_7_3",
+          "startTime": 32464.32,
+          "endTime": 35741.315
+        }
+      ],
+      "startTime": 29304.938,
+      "endTime": 35741.315
+    },
+    {
+      "words": [
+        {
+          "word": "Water",
+          "wordIndex": 33,
+          "id": "word_8_0",
+          "startTime": 48431.02,
+          "endTime": 50054.96200000001
+        },
+        {
+          "word": "is",
+          "wordIndex": 34,
+          "id": "word_8_1",
+          "startTime": 50126.077000000005,
+          "endTime": 50289.892
+        },
+        {
+          "word": "my",
+          "wordIndex": 35,
+          "id": "word_8_2",
+          "startTime": 50347.202000000005,
+          "endTime": 50722.833
+        },
+        {
+          "word": "eye",
+          "wordIndex": 36,
+          "id": "word_8_3",
+          "startTime": 50789.843,
+          "endTime": 51535.820999999996
+        }
+      ],
+      "startTime": 48431.02,
+      "endTime": 51535.820999999996
+    },
+    {
+      "words": [
+        {
+          "word": "Most",
+          "wordIndex": 37,
+          "id": "word_9_0",
+          "startTime": 51593.829,
+          "endTime": 52209.11
+        },
+        {
+          "word": "faithful",
+          "wordIndex": 38,
+          "id": "word_9_1",
+          "startTime": 52264.775,
+          "endTime": 53274.259
+        },
+        {
+          "word": "mirror",
+          "wordIndex": 39,
+          "id": "word_9_2",
+          "startTime": 53335.632,
+          "endTime": 54738.985
+        }
+      ],
+      "startTime": 51593.829,
+      "endTime": 54738.985
+    },
+    {
+      "words": [
+        {
+          "word": "Fearless",
+          "wordIndex": 40,
+          "id": "word_10_0",
+          "startTime": 54821.345,
+          "endTime": 56221.314999999995
+        },
+        {
+          "word": "on",
+          "wordIndex": 41,
+          "id": "word_10_1",
+          "startTime": 56317.428,
+          "endTime": 56555.352
+        },
+        {
+          "word": "my",
+          "wordIndex": 42,
+          "id": "word_10_2",
+          "startTime": 56617.195999999996,
+          "endTime": 57750.334
+        },
+        {
+          "word": "breath",
+          "wordIndex": 43,
+          "id": "word_10_3",
+          "startTime": 57985.847,
+          "endTime": 61187.261999999995
+        }
+      ],
+      "startTime": 54821.345,
+      "endTime": 61187.261999999995
+    },
+    {
+      "words": [
+        {
+          "word": "Teardrop",
+          "wordIndex": 44,
+          "id": "word_11_0",
+          "startTime": 61258.54,
+          "endTime": 62833.257000000005
+        },
+        {
+          "word": "on",
+          "wordIndex": 45,
+          "id": "word_11_1",
+          "startTime": 62903.533,
+          "endTime": 63071.202
+        },
+        {
+          "word": "the",
+          "wordIndex": 46,
+          "id": "word_11_2",
+          "startTime": 63137.795,
+          "endTime": 63408.239
+        },
+        {
+          "word": "fire",
+          "wordIndex": 47,
+          "id": "word_11_3",
+          "startTime": 63523.068,
+          "endTime": 64333.60399999999
+        }
+      ],
+      "startTime": 61258.54,
+      "endTime": 64333.60399999999
+    },
+    {
+      "words": [
+        {
+          "word": "Of",
+          "wordIndex": 48,
+          "id": "word_12_0",
+          "startTime": 64493.481,
+          "endTime": 65062.561
+        },
+        {
+          "word": "a",
+          "wordIndex": 49,
+          "id": "word_12_1",
+          "startTime": 65127.429000000004,
+          "endTime": 65462.507000000005
+        },
+        {
+          "word": "confession",
+          "wordIndex": 50,
+          "id": "word_12_2",
+          "startTime": 65525.278999999995,
+          "endTime": 67536.051
+        }
+      ],
+      "startTime": 64493.481,
+      "endTime": 67536.051
+    },
+    {
+      "words": [
+        {
+          "word": "Fearless",
+          "wordIndex": 51,
+          "id": "word_13_0",
+          "startTime": 67645.47399999999,
+          "endTime": 69128.803
+        },
+        {
+          "word": "on",
+          "wordIndex": 52,
+          "id": "word_13_1",
+          "startTime": 69202.034,
+          "endTime": 69471.555
+        },
+        {
+          "word": "my",
+          "wordIndex": 53,
+          "id": "word_13_2",
+          "startTime": 69530.691,
+          "endTime": 70545.548
+        },
+        {
+          "word": "breath",
+          "wordIndex": 54,
+          "id": "word_13_3",
+          "startTime": 70841.629,
+          "endTime": 73817.544
+        }
+      ],
+      "startTime": 67645.47399999999,
+      "endTime": 73817.544
+    },
+    {
+      "words": [
+        {
+          "word": "Most",
+          "wordIndex": 55,
+          "id": "word_14_0",
+          "startTime": 74062.243,
+          "endTime": 74523.45300000001
+        },
+        {
+          "word": "faithful",
+          "wordIndex": 56,
+          "id": "word_14_1",
+          "startTime": 74610.038,
+          "endTime": 75618.287
+        },
+        {
+          "word": "mirror",
+          "wordIndex": 57,
+          "id": "word_14_2",
+          "startTime": 75695.66,
+          "endTime": 77034.772
+        }
+      ],
+      "startTime": 74062.243,
+      "endTime": 77034.772
+    },
+    {
+      "words": [
+        {
+          "word": "Fearless",
+          "wordIndex": 58,
+          "id": "word_15_0",
+          "startTime": 77187.457,
+          "endTime": 78652.80900000001
+        },
+        {
+          "word": "on",
+          "wordIndex": 59,
+          "id": "word_15_1",
+          "startTime": 78716.758,
+          "endTime": 79061.59700000001
+        },
+        {
+          "word": "my",
+          "wordIndex": 60,
+          "id": "word_15_2",
+          "startTime": 79127.644,
+          "endTime": 80217.62599999999
+        },
+        {
+          "word": "breath",
+          "wordIndex": 61,
+          "id": "word_15_3",
+          "startTime": 80429.852,
+          "endTime": 83550.112
+        }
+      ],
+      "startTime": 77187.457,
+      "endTime": 83550.112
+    },
+    {
+      "words": [
+        {
+          "word": "Teardrop",
+          "wordIndex": 62,
+          "id": "word_16_0",
+          "startTime": 83673.516,
+          "endTime": 84374.628
+        },
+        {
+          "word": "on",
+          "wordIndex": 63,
+          "id": "word_16_1",
+          "startTime": 84456.092,
+          "endTime": 85014.397
+        },
+        {
+          "word": "the",
+          "wordIndex": 64,
+          "id": "word_16_2",
+          "startTime": 85082.047,
+          "endTime": 85192.374
+        },
+        {
+          "word": "fire",
+          "wordIndex": 65,
+          "id": "word_16_3",
+          "startTime": 85262.001,
+          "endTime": 86964.496
+        }
+      ],
+      "startTime": 83673.516,
+      "endTime": 86964.496
+    },
+    {
+      "words": [
+        {
+          "word": "Fearless",
+          "wordIndex": 66,
+          "id": "word_17_0",
+          "startTime": 87019.902,
+          "endTime": 89311.098
+        },
+        {
+          "word": "on",
+          "wordIndex": 67,
+          "id": "word_17_1",
+          "startTime": 89372.68000000001,
+          "endTime": 89547.75
+        },
+        {
+          "word": "my",
+          "wordIndex": 68,
+          "id": "word_17_2",
+          "startTime": 89594.376,
+          "endTime": 89952.432
+        },
+        {
+          "word": "breath",
+          "wordIndex": 69,
+          "id": "word_17_3",
+          "startTime": 90053.397,
+          "endTime": 96622.364
+        }
+      ],
+      "startTime": 87019.902,
+      "endTime": 96622.364
+    },
+    {
+      "words": [
+        {
+          "word": "You're",
+          "wordIndex": 70,
+          "id": "word_18_0"
+        },
+        {
+          "word": "stumbling",
+          "wordIndex": 71,
+          "id": "word_18_1"
+        },
+        {
+          "word": "in",
+          "wordIndex": 72,
+          "id": "word_18_2"
+        },
+        {
+          "word": "the",
+          "wordIndex": 73,
+          "id": "word_18_3"
+        },
+        {
+          "word": "dark",
+          "wordIndex": 74,
+          "id": "word_18_4"
+        }
+      ]
+    },
+    {
+      "words": [
+        {
+          "word": "Stumbling",
+          "wordIndex": 75,
+          "id": "word_19_0"
+        },
+        {
+          "word": "in",
+          "wordIndex": 76,
+          "id": "word_19_1"
+        },
+        {
+          "word": "the",
+          "wordIndex": 77,
+          "id": "word_19_2"
+        },
+        {
+          "word": "dark",
+          "wordIndex": 78,
+          "id": "word_19_3"
+        }
+      ]
+    }
+  ],
+  "md5Hash": "4a2812a012e7dfc06e47e355a1c758b8",
+  "originalFileName": "07 - Teardrop.mp3",
+  "allTags": {
+    "ACOUSTIC": "",
+    "TRACK": "7",
+    "ARTISTS": "",
+    "ORIGINAL_YEAR": "",
+    "TRACK_TOTAL": "",
+    "RECORD_LABEL": "",
+    "MUSICBRAINZ_RELEASEID": "",
+    "GENRE": "Indie",
+    "MOOD_VALENCE": "",
+    "FBPM": "",
+    "MUSICBRAINZ_ARTISTID": "",
+    "ACOUSTID_FINGERPRINT": "",
+    "ALBUM_ARTIST_SORT": "",
+    "TIMBRE": "",
+    "URL_DISCOGS_RELEASE_SITE": "",
+    "MEDIA": "",
+    "BARCODE": "",
+    "MUSICBRAINZ_RELEASE_TYPE": "",
+    "AMAZON_ID": "",
+    "MUSICBRAINZ_RELEASE_TRACK_ID": "",
+    "CONDUCTOR": "",
+    "MUSICBRAINZ_TRACK_ID": "",
+    "URL_LYRICS_SITE": "",
+    "ALBUM_SORT": "",
+    "URL_WIKIPEDIA_RELEASE_SITE": "",
+    "ARTIST": "Newton Faulkner",
+    "ORCHESTRA": "",
+    "ISRC": "",
+    "ARTIST_SORT": "",
+    "COMMENT": "www.legalsounds.com",
+    "WORK": "",
+    "MUSICBRAINZ_RELEASE_GROUP_ID": "",
+    "PERFORMER": "",
+    "ORIGINAL_ALBUM": "",
+    "RATING": "",
+    "MOOD_AROUSAL": "",
+    "MUSICBRAINZ_DISC_ID": "",
+    "SCRIPT": "",
+    "MUSICBRAINZ_ORIGINAL_RELEASE_ID": "",
+    "TONALITY": "",
+    "PRODUCER": "",
+    "GROUPING": "",
+    "IS_COMPILATION": "",
+    "KEY": "",
+    "MUSICIP_ID": "",
+    "MOOD_DANCEABILITY": "",
+    "URL_OFFICIAL_RELEASE_SITE": "",
+    "MUSICBRAINZ_WORK_ID": "",
+    "LYRICIST": "",
+    "URL_WIKIPEDIA_ARTIST_SITE": "",
+    "LANGUAGE": "",
+    "CATALOG_NO": "",
+    "COUNTRY": "",
+    "LYRICRECORDER.COM": "",
+    "ORIGINAL_ARTIST": "",
+    "TEMPO": "",
+    "MOOD_RELAXED": "",
+    "MUSICBRAINZ_RELEASE_STATUS": "",
+    "DISC_SUBTITLE": "",
+    "DJMIXER": "",
+    "DISC_NO": "",
+    "YEAR": "2007",
+    "PART": "",
+    "MUSICBRAINZ_RELEASE_COUNTRY": "",
+    "COMPOSER": "",
+    "MOOD_HAPPY": "",
+    "MUSICBRAINZ_RELEASEARTISTID": "",
+    "TITLE_SORT": "",
+    "URL_DISCOGS_ARTIST_SITE": "",
+    "MIXER": "",
+    "COMPOSER_SORT": "",
+    "QUALITY": "",
+    "ENGINEER": "",
+    "ALBUM": "Hand Built By Robots",
+    "LYRICS": "",
+    "MOOD_PARTY": "",
+    "ALBUM_ARTIST": "",
+    "ACOUSTID_ID": "",
+    "ARRANGER": "",
+    "BPM": "",
+    "MOOD_AGGRESSIVE": "",
+    "ELECTRONIC": "",
+    "COVER_ART": "",
+    "SUBTITLE": "",
+    "TAGS": "",
+    "DISC_TOTAL": "",
+    "MOOD_SAD": "",
+    "MOOD": "",
+    "ENCODER": "",
+    "REMIXER": "",
+    "ORIGINAL_LYRICIST": "",
+    "OCCASION": "",
+    "CUSTOM1": "",
+    "CUSTOM2": "",
+    "CUSTOM3": "",
+    "CUSTOM4": "",
+    "CUSTOM5": "",
+    "INSTRUMENTAL": "",
+    "URL_OFFICIAL_ARTIST_SITE": "",
+    "TITLE": "Teardrop"
+  },
+  "videoSnapshot": {
+    "snapshots": [
+      {
+        "id": 0,
+        "parameterValues": {
+          "graduatedWordType": "vertical",
+          "graduatedWordThreshold": 200,
+          "graduatedWordEasingFunction": "easeOutExpo",
+          "graduatedWordOpacity": 0.9,
+          "graduatedWordColour": "#f715f7",
+          "backgroundImage": "1500213465111.jpg",
+          "backgroundRepeat": "no-repeat",
+          "backgroundImageWidth": "827",
+          "backgroundImageHeight": "652",
+          "backgroundImagePositionX": "0",
+          "backgroundImagePositionY": "0",
+          "backgroundContainerWidth": "849",
+          "backgroundContainerHeight": "709",
+          "backgroundContainerPositionX": "-21",
+          "backgroundContainerPositionY": "-21",
+          "backgroundImageRotation": "0",
+          "fontFamily": "Dancing in the Rainbow",
+          "selectedEasingFunction": "easeOutQuad",
+          "selectedEasingDuration": "500",
+          "selectedOpacity": "0.9",
+          "selectedFontColour": "#8065fc",
+          "lineHeight": "67",
+          "characterSpacing": "30",
+          "fontSize": "74",
+          "fontSizeIncrease": "2",
+          "selectedShadowShow": true,
+          "selectedShadowColour": "#000000",
+          "selectedShadowOffsetX": "5",
+          "selectedShadowOffsetY": "5",
+          "selectedShadowBlur": "10",
+          "unselectedFontColour": "#ffffff",
+          "unselectedShadowShow": true,
+          "unselectedShadowColour": "#000000",
+          "unselectedShadowOffsetX": "5",
+          "unselectedShadowOffsetY": "5",
+          "unselectedShadowBlur": "7",
+          "unselectedOpacity": "0.9",
+          "backgroundColour": "#ffffff",
+          "textX": "36",
+          "textY": "106",
+          "textWidth": "707",
+          "textHeight": "508",
+          "backgroundShadowShow": true,
+          "backgroundShadowColour": "#f8f8ff",
+          "backgroundShadowOffsetX": "4",
+          "backgroundOffsetY": "4",
+          "backgroundShadowBlur": "7",
+          "backgroundOpacity": "0"
+        }
+      }
+    ]
+  }
+}

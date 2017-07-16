@@ -17,7 +17,7 @@ MKDIR %GENERATED_FRAMES%
 %PHANTOM_BINARY% %PHANTOM_SCRIPTS%\takeLoadsOfScreenshots2.js 0 4000 %GENERATED_FRAMES% %FPS% 800 600
 REM %FFMPEG_BINARY% -i %GENERATED_FRAMES%image_%%05d.jpg -framerate %FPS% -c:v libx264 -preset slow -crf 1 -pix_fmt yuv420p   -y %VIDEO_SILENT%\out1.mp4
 %FFMPEG_BINARY% -r %FPS% -i %GENERATED_FRAMES%image_%%05d.jpg -c:v libx264 -preset slow -crf 1 -pix_fmt yuv420p   -y %VIDEO_SILENT%\out1.mp4
-%FFMPEG_BINARY% -r %FPS% -i %VIDEO_SILENT%\out1.mp4 -i %MP3%\c6626f323f0e5e590c74cd99a9fbfafe.MP3 -c:v copy -c:a copy -y %VIDEO%\output3.mp4
+%FFMPEG_BINARY% -r %FPS% -i %VIDEO_SILENT%\out1.mp4 -i %MP3%\4a2812a012e7dfc06e47e355a1c758b8.MP3 -c:v copy -c:a copy -y %VIDEO%\output3.mp4
 
 DEL %VIDEO_SILENT%\out1.mp4
 RMDIR /S/Q %GENERATED_FRAMES%
