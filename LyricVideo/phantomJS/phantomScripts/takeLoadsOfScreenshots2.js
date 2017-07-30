@@ -7,10 +7,13 @@ var frameLocation = system.args[3];
 var fps = parseInt(system.args[4]);
 var pageWidth=parseInt(system.args[5]);
 var pageHeight=parseInt(system.args[6]);
+var videoScript=system.args[7];
 var page = require('webpage').create();
-var theUrl = 'http://localhost:8080/LyricVideo/test1.html?frameNumber='
-			+ frameNumber + '&fps=' + fps +'&pageWidth='+pageWidth+'&pageHeight='+pageHeight;
 
+var theUrl = 'http://localhost:8080/lyricrecorder/frameGenerator.html?frameNumber='
+			+ frameNumber + '&fps=' + fps +'&pageWidth='+pageWidth+'&pageHeight='+pageHeight+'&videoScript='+videoScript;
+
+console.log(theUrl);
 helloAlex(frameNumber);
 
 function helloAlex(frameNumber) {
@@ -31,8 +34,8 @@ function captureFrames(page)
 {
 	console.log("Done");
 	page.clipRect = {
-		    top:    10,
-		    left:   10,
+		    top:    0,
+		    left:   0,
 		    width:  pageWidth,
 		    height: pageHeight
 	};
